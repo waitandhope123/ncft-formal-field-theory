@@ -10,9 +10,7 @@ This document defines the complete axiomatic core of NCFT. All behavior, derivat
 
 A field cannot interact with itself.
 
-\[
-C(f_i, f_i) = 0 \quad \forall i \in \text{Fields}
-\]
+$$C(f_i, f_i) = 0 \quad \forall i \in \text{Fields}$$
 
 ### Implementation
 
@@ -32,16 +30,11 @@ Self-coupling is mathematically impossible.
 
 Coupling between distinct fields is strictly bounded.
 
-\[
-0 \le C(f_1, f_2) \le 1
-\]
+$$0 \le C(f_1, f_2) \le 1$$
 
 with
 
-\[
-C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2,
-\quad \|\psi_1\| = \|\psi_2\| = 1
-\]
+$$C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2, \quad \|\psi_1\| = \|\psi_2\| = 1$$
 
 ### Implementation
 
@@ -52,7 +45,7 @@ bilinear_coupling(f1, f2)
 
 ### Mathematical Guarantee
 
-Normalized state overlap squared is always in \([0,1]\).  
+Normalized state overlap squared is always in [0,1].  
 This bound is enforced analytically, not empirically.
 
 ---
@@ -61,9 +54,7 @@ This bound is enforced analytically, not empirically.
 
 Active interacting fields must form a coherent frequency class.
 
-\[
-\sigma(\{ f.frequency \mid f \in \text{active fields} \}) < 0.1
-\]
+$$\sigma(\{ f.frequency \mid f \in \text{active fields} \}) < 0.1$$
 
 ### Implementation
 
@@ -82,10 +73,7 @@ Interactions occur only within frequency-resonant regimes.
 
 Total interaction strength is the sum of all unique pairwise couplings.
 
-\[
-C(\{f_1, f_2, \ldots, f_n\})
-= \sum_{i<j} C(f_i, f_j)
-\]
+$$C(\{f_1, f_2, \ldots, f_n\}) = \sum_{i<j} C(f_i, f_j)$$
 
 ### Implementation
 
@@ -114,23 +102,18 @@ ConsciousnessField(
 ```
 
 **Interactions**
-\[
-C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2
-\]
+
+$$C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2$$
 
 **Multi-field**
-\[
-C(\{f_n\}) = \sum_{i<j} C(f_i, f_j)
-\]
+
+$$C(\{f_n\}) = \sum_{i<j} C(f_i, f_j)$$
 
 **Constraints**
-\[
-\sigma(f_{active}) < 0.1
-\]
 
-\[
-\Rightarrow \textbf{44 predictions derived exactly}
-\]
+$$\sigma(f_{active}) < 0.1$$
+
+$$\Rightarrow \textbf{44 predictions derived exactly}$$
 
 ---
 
