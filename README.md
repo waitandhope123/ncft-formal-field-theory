@@ -21,7 +21,7 @@ All predictions are derived strictly from first principles, with no empirical tu
 
 ## Core Mathematical System
 
-### Primitive Object
+### Primitive Object (Symbolic)
 
 ```text
 ConsciousnessField(
@@ -31,44 +31,91 @@ ConsciousnessField(
 )
 ```
 
-All states are normalized:  
-\[
+All states are normalized:
+
+$$
 \|\psi\| = 1
-\]
+$$
+
+**Meaning:**
+
+- \( \psi \) is the complex state vector representing a conscious field.
+- Normalization enforces probabilistic consistency.
+- Ensures bounded, stable coupling behavior.
 
 ---
 
-### Axiomatic Interactions
+## Axiomatic Interactions
 
-1. **Universal Exclusion**
-   \[
-   C(f_i, f_i) = 0 \quad \forall i
-   \]
+### 1. Universal Exclusion
 
-2. **Bounded Bilinear Coupling**
-   \[
-   0 \le C(f_1, f_2) \le 1 \quad \forall f_1 \ne f_2
-   \]
+$$
+C(f_i, f_i) = 0 \quad \forall i
+$$
 
-3. **Frequency Coherence**
-   \[
-   \sigma(f_{\text{active}}) < 0.1
-   \]
+**Meaning:**
 
-4. **Pairwise Dominance**
-   \[
-   C(\{f_n\}) = \sum_{i<j} C(f_i, f_j)
-   \]
+- A field cannot couple to itself.
+- Prevents self-feedback loops and paradoxical amplification.
+- Guarantees identity separation.
 
 ---
 
-### Coupling Definition
+### 2. Bounded Bilinear Coupling
 
-\[
-C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2
-\]
+$$
+0 \le C(f_1, f_2) \le 1 \quad \forall f_1 \ne f_2
+$$
+
+**Meaning:**
+
+- All inter-field interactions are finite and normalized.
+- Upper bound corresponds to perfect coherence.
+- Lower bound enforces non-negativity of interaction strength.
+
+---
+
+### 3. Frequency Coherence
+
+$$
+\sigma(f_{\mathrm{active}}) < 0.1
+$$
+
+**Meaning:**
+
+- Active fields must remain within a narrow frequency bandwidth.
+- Prevents decoherent or noisy interactions.
+- Acts as a stability constraint on interaction viability.
+
+---
+
+### 4. Pairwise Dominance
+
+$$
+C(\{f_n\}) = \sum_{i<j} C(f_i, f_j)
+$$
+
+**Meaning:**
+
+- Multi-field systems reduce to pairwise interactions.
+- The ordering condition \( i < j \) avoids double counting.
+- No higher-order interaction terms are required.
+
+---
+
+## Coupling Definition
+
+$$
+C(f_1, f_2) = \left| \langle \psi_1 \mid \psi_2 \rangle \right|^2
+$$
 
 with normalized states.
+
+**Meaning:**
+
+- Coupling is the squared inner product of state vectors.
+- Measures overlap in semantic / informational structure.
+- Ensures symmetry and boundedness by construction.
 
 ---
 
@@ -88,36 +135,23 @@ with normalized states.
 
 ---
 
-## Quick Start
-
-```bash
-git clone https://github.com/[yourusername]/ncft-formal-field-theory.git
-cd ncft-formal-field-theory
-python ncft_formal.py
-```
-
-**Expected output:**  
-Complete validation matrix demonstrating full axiomatic consistency.
-
----
-
 ## Formal Properties
 
-- States always normalized (`||ψ|| = 1`)
+- States always normalized (\( \|\psi\| = 1 \))
 - Couplings strictly bounded
-- Pairwise indexing (`i < j`) prevents double-counting
-- Edge cases handled (empty fields, inactive states)
-- Deterministic (zero temporal variance)
+- Pairwise indexing prevents overcounting
+- Edge cases handled (empty or inactive fields)
+- Deterministic evolution (zero temporal variance)
 
 ---
 
 ## Axiomatic Derivation Example
 
 ```text
-ConsciousnessField("user") ⟂ ConsciousnessField("user")
+ConsciousnessField("user") ⟂ ConsciousnessField("user")  
 
 C("user","psychic") =
-|⟨semantic_user | semantic_psychic⟩|² = 1.00
+|⟨semantic_user | semantic_psychic⟩|² = 1.00  
 
 C({user, psychic, dad}) =
 C(user, psychic) + C(user, dad) + C(psychic, dad)
@@ -136,7 +170,7 @@ pip install numpy
 python ncft_formal.py
 ```
 
-Runs full derivation and validation suite.
+Runs the full derivation and validation suite.
 
 ---
 
@@ -172,10 +206,3 @@ Runs full derivation and validation suite.
 - ✅ All mathematical bounds enforced  
 - ✅ 44/44 predictions derived  
 - ✅ Publication-ready formal system  
-
----
-
-**NCFT v5.2a.2**  
-*A complete formal minimal field theory modeling consciousness interactions via bilinear mathematics.*
-
-> Replace `[yourusername]` and `[Your Name]` with your details and save this file as `README.md`.
