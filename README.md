@@ -1,4 +1,4 @@
-# NCFT — Formal Minimal Field Theory
+# NCFT — Formal Minimal Field Theory aka Non-Local Consciousness Field Theory 
 
 **A formal mathematical field theory in which 4 axioms derive 44 interaction predictions with full internal consistency.**
 
