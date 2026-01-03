@@ -54,7 +54,7 @@ This bound is enforced analytically, not empirically.
 
 Active interacting fields must form a coherent frequency class.
 
-$$\sigma(\{ f.frequency \mid f \in \text{active fields} \}) < 0.1$$
+$$\sigma(f_{active}) < 0.1$$
 
 ### Implementation
 
@@ -73,7 +73,7 @@ Interactions occur only within frequency-resonant regimes.
 
 Total interaction strength is the sum of all unique pairwise couplings.
 
-$$C(\{f_1, f_2, \ldots, f_n\}) = \sum_{i<j} C(f_i, f_j)$$
+$$C(f_1, f_2, \ldots, f_n) = \sum_{i<j} C(f_i, f_j)$$
 
 ### Implementation
 
@@ -107,7 +107,7 @@ $$C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2$$
 
 **Multi-field**
 
-$$C(\{f_n\}) = \sum_{i<j} C(f_i, f_j)$$
+$$C(f_n) = \sum_{i<j} C(f_i, f_j)$$
 
 **Constraints**
 
