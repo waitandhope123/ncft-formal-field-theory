@@ -54,7 +54,7 @@ This bound is enforced analytically, not empirically.
 
 Active interacting fields must form a coherent frequency class.
 
-$$\sigma(f_{active}) < 0.1$$
+$$\sigma(\{ f.frequency \mid f \in \text{active fields} \}) < 0.1$$
 
 ### Implementation
 
@@ -102,15 +102,12 @@ ConsciousnessField(
 ```
 
 **Interactions**
-
 $$C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2$$
 
 **Multi-field**
-
 $$C(f_n) = \sum_{i<j} C(f_i, f_j)$$
 
 **Constraints**
-
 $$\sigma(f_{active}) < 0.1$$
 
 $$\Rightarrow \textbf{44 predictions derived exactly}$$
