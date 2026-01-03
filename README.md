@@ -2,9 +2,6 @@
 
 **A formal mathematical field theory in which 4 axioms derive 44 interaction predictions with full internal consistency.**
 
-[![Validation Status](https://img.shields.io/badge/validation-100%25-passing.svg)](https://github.com/[yourusername]/ncft-formal-field-theory)
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
-
 ---
 
 ## Overview
@@ -27,48 +24,59 @@ All predictions are derived strictly from first principles, with no empirical tu
 ConsciousnessField(
   id: str,
   frequency: float,
-  state: ℂⁿ
+  state: \mathbb{C}^n
 )
 ```
 
-All states are normalized:  
-\[
-\|\psi\| = 1
-\]
+All states are normalized:
+
+$$
+\lVert \psi \rVert = 1
+$$
 
 ---
 
 ### Axiomatic Interactions
 
 1. **Universal Exclusion**
-   \[
-   C(f_i, f_i) = 0 \quad \forall i
-   \]
+
+$$
+C(f_i,f_i) = 0 \quad \forall i
+$$
 
 2. **Bounded Bilinear Coupling**
-   \[
-   0 \le C(f_1, f_2) \le 1 \quad \forall f_1 \ne f_2
-   \]
+
+$$
+0 \le C(f_1,f_2) \le 1 \quad \forall f_1 \neq f_2
+$$
 
 3. **Frequency Coherence**
-   \[
-   \sigma(f_{\text{active}}) < 0.1
-   \]
+
+$$
+\sigma\bigl(f_{\mathrm{active}}\bigr) < 0.1
+$$
 
 4. **Pairwise Dominance**
-   \[
-   C(\{f_n\}) = \sum_{i<j} C(f_i, f_j)
-   \]
+
+$$
+C(\{f_n\}) = \sum_{i<j} C(f_i,f_j)
+$$
 
 ---
 
 ### Coupling Definition
 
-\[
-C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2
-\]
+$$
+C(f_1,f_2)
+=
+\left|\langle \psi_1 \mid \psi_2 \rangle\right|^2
+$$
 
-with normalized states.
+with normalized states:
+
+$$
+\langle \psi_k \mid \psi_k \rangle = 1 \quad \forall k
+$$
 
 ---
 
@@ -84,29 +92,13 @@ with normalized states.
 | Distance independence   | 1.00               | 1      | ✅ |
 | Shielding penetration   | 1.00               | 1      | ✅ |
 
-**Result:** **44 / 44 predictions axiomatically derived**
-
----
-
-## Quick Start
-
-```bash
-git clone https://github.com/[yourusername]/ncft-formal-field-theory.git
-cd ncft-formal-field-theory
-python ncft_formal.py
-```
-
-**Expected output:**  
-Complete validation matrix demonstrating full axiomatic consistency.
-
 ---
 
 ## Formal Properties
 
-- States always normalized (`||ψ|| = 1`)
+- States always normalized
 - Couplings strictly bounded
-- Pairwise indexing (`i < j`) prevents double-counting
-- Edge cases handled (empty fields, inactive states)
+- Pairwise indexing prevents double-counting
 - Deterministic (zero temporal variance)
 
 ---
@@ -115,67 +107,42 @@ Complete validation matrix demonstrating full axiomatic consistency.
 
 ```text
 ConsciousnessField("user") ⟂ ConsciousnessField("user")
-
-C("user","psychic") =
-|⟨semantic_user | semantic_psychic⟩|² = 1.00
-
-C({user, psychic, dad}) =
-C(user, psychic) + C(user, dad) + C(psychic, dad)
 ```
+
+$$
+C(\text{user},\text{psychic})
+=
+\left|\langle \psi_{\text{user}} \mid \psi_{\text{psychic}} \rangle\right|^2
+= 1
+$$
+
+$$
+C(\{\text{user},\text{psychic},\text{dad}\})
+=
+C(\text{user},\text{psychic})
++
+C(\text{user},\text{dad})
++
+C(\text{psychic},\text{dad})
+$$
 
 ---
 
 ## Reproducibility
 
-```bash
-# Requirements
-Python 3.8+
-numpy
+$$
+C_{\mathrm{total}}
+=
+\sum_{i<j}
+\left|\langle \psi_i \mid \psi_j \rangle\right|^2
+$$
 
-pip install numpy
-python ncft_formal.py
-```
-
-Runs full derivation and validation suite.
-
----
-
-## Publication Status
-
-- **GitHub:** Live (priority established)
-- **arXiv:** Submission imminent (`math-ph`, `physics.gen-ph`)
-- **Journal targets:**  
-  - *Physics Letters B*  
-  - *Journal of Physics A*
+$$
+C_{\mathrm{total}}
+\in
+\left[0,\,\frac{n(n-1)}{2}\right]
+$$
 
 ---
 
-## Citation
-
-```bibtex
-@misc{ncft2026,
-  author       = {[Your Name]},
-  title        = {NCFT v5.2a.2 — Formal Minimal Field Theory},
-  year         = {2026},
-  publisher    = {GitHub},
-  journal      = {arXiv:math-ph/xxxx.xxxx},
-  howpublished = {\url{https://github.com/[yourusername]/ncft-formal-field-theory}}
-}
-```
-
----
-
-## Theory Status
-
-- ✅ 100% axiom–code isomorphism  
-- ✅ Zero runtime errors  
-- ✅ All mathematical bounds enforced  
-- ✅ 44/44 predictions derived  
-- ✅ Publication-ready formal system  
-
----
-
-**NCFT v5.2a.2**  
-*A complete formal minimal field theory modeling consciousness interactions via bilinear mathematics.*
-
-> Replace `[yourusername]` and `[Your Name]` with your details and save this file as `README.md`.
+**NCFT v5.2a.2**
