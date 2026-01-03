@@ -154,5 +154,3 @@ print(n_body_interaction([f1,f2,f3]))       # Axiom IV → Σ pairs
 
 **NCFT v5.2a.2**  
 *A closed, minimal, publication-ready axiomatic system.*
-
-Save this file as **`AXIOMS.md`**.
