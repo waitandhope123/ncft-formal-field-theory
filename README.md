@@ -2,7 +2,7 @@
 
 **A formal mathematical field theory in which 4 axioms derive 44 interaction predictions with full internal consistency.**
 
-[![Validation Status](https://img.shields.io/badge/validation-100%25-passing.svg)](https://github.com/[waitandhope123]/ncft-formal-field-theory)
+[![Validation Status](https://img.shields.io/badge/validation-100%25-passing.svg)](https://github.com/waitandhope123/ncft-formal-field-theory)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 
 ---
