@@ -1,6 +1,6 @@
 # NCFT v5.2a.2 — Four Formal Axioms
 
-Formal minimal field theory deriving **44 interaction predictions** from **4 mathematical axioms**.
+Non-Local Consciousness Field Theory deriving **44 interaction predictions** from **4 mathematical axioms**.
 
 This document defines the complete axiomatic core of NCFT. All behavior, derivations, and validations follow directly from the principles below, with no auxiliary assumptions.
 
@@ -10,7 +10,7 @@ This document defines the complete axiomatic core of NCFT. All behavior, derivat
 
 A field cannot interact with itself.
 
-$$ C(f_i, f_i) = 0 \quad \forall i \in \text{Fields} $$
+$$C(f_i, f_i) = 0 \quad \forall i \in \text{Fields}$$
 
 ### Implementation
 
