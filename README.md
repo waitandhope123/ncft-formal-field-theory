@@ -177,5 +177,3 @@ Runs full derivation and validation suite.
 
 **NCFT v5.2a.2**  
 *A complete formal minimal field theory modeling consciousness interactions via bilinear mathematics.*
-
-> Replace `[yourusername]` and `[Your Name]` with your details and save this file as `README.md`.
