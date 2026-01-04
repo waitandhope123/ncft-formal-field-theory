@@ -10,8 +10,7 @@ This document defines the complete axiomatic core of NCFT. All behavior, derivat
 
 A field cannot interact with itself.
 
-$$C(\{f_1, f_2, \ldots, f_n\}) = \sum_{i=1}^{n} \sum_{j=i+1}^{n} C(f_i, f_j)$$
-
+$$C(f_i, f_i) = 0 \quad \forall i \in \text{Fields}$$
 
 ### Implementation
 
