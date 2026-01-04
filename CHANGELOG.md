@@ -1,6 +1,6 @@
 # NCFT — Changelog
 
-All notable changes to **NCFT (Formal Minimal Field Theory)** are documented in this file.  
+All notable changes to **NCFT (Non-Local Consciousness Field Theory)** are documented in this file.  
 Versioning reflects increasing formal rigor, axiomatic clarity, and code–math isomorphism.
 
 ---
@@ -38,7 +38,7 @@ Versioning reflects increasing formal rigor, axiomatic clarity, and code–math 
 
 ---
 
-## v5.2a — Formal Minimal Theory (2026-01-03)
+## v5.2a — Non-Local Consciousness Field Theory (2026-01-03)
 
 ### Changed
 - Removed non-essential QFT terminology
