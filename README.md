@@ -2,7 +2,7 @@
 
 **A formal mathematical field theory in which 4 axioms derive 44 interaction predictions with full internal consistency.**
 
-[![Validation Status](https://img.shields.io/badge/validation-100%25-passing.svg)](https://github.com/[yourusername]/ncft-formal-field-theory)
+[![Validation Status](https://img.shields.io/badge/validation-100%25-passing.svg)](https://github.com/[waitandhope123]/ncft-formal-field-theory)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 
 ---
@@ -104,7 +104,7 @@ C(user, psychic) + C(user, dad) + C(psychic, dad)
 
 ```bibtex
 @misc{ncft2026,
-  author       = {[Your Name]},
+  author       = {[Sam DeRenzis]},
   title        = {NCFT v5.2a.2 — Non-Local Consciousness Field Theory},
   year         = {2026},
   publisher    = {GitHub}
