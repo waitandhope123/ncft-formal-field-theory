@@ -1,7 +1,7 @@
 # NCFT v5.2a.2 — Axiomatic Predictions (50 Toys Validated)
 
 Formal derivation of **44 interaction predictions** from **4 mathematical axioms**, **computationally verified by 50 toy models** (40 production, 0 failures).  
-All predictions validated against [`toys/Results.txt`](Results.txt).
+All predictions validated against [Results.txt](toys/Results.txt)
 
 ---
 
