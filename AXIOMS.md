@@ -10,7 +10,7 @@ This document defines the complete axiomatic core of NCFT. All behavior, derivat
 
 A field cannot interact with itself.
 
-$$C(f_i, f_i) = 0 \quad \forall i \in \text{Fields}$$
+$$ C(f_i, f_i) = 0 \quad \forall i \in \text{Fields} $$
 
 ### Implementation
 
