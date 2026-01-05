@@ -1,0 +1,349 @@
+toy01_null_ensemble.py
+TOY01 — NULL ENSEMBLE COMPLETE
+Saved: outputs/toy01_null_ensemble.csv
+Trials=500 | N=12 | dim=16 | pairs=66
+
+Baseline distributions (over trials):
+  C_mean : mean=0.062380 | q05=0.051365 q50=0.061726 q95=0.074748
+  C_sigma: mean=0.057375 | q05=0.044944 q50=0.056890 q95=0.070787
+  C_total: mean=4.117051 | q05=3.390093 q50=4.073893 q95=4.933348
+  C_max  : mean=0.271122 | q05=0.188249 q50=0.263049 q95=0.388480
+
+Use this CSV as the null baseline for Toys 2–10.
+
+toy02_dimensionality_sweep.py
+TOY02 — DIMENSIONALITY SWEEP
+N=12 | trials per dim=200
+
+dim=  1 | <C>=1.000000 (expected≈1.000000) | σ=0.000000
+dim=  2 | <C>=0.497412 (expected≈0.500000) | σ=0.286331
+dim=  4 | <C>=0.246429 (expected≈0.250000) | σ=0.190806
+dim=  8 | <C>=0.125613 (expected≈0.125000) | σ=0.109300
+dim= 16 | <C>=0.062949 (expected≈0.062500) | σ=0.058932
+dim= 32 | <C>=0.030770 (expected≈0.031250) | σ=0.029456
+dim= 64 | <C>=0.015595 (expected≈0.015625) | σ=0.015088
+
+Saved CSV → outputs/toy02_dimensionality_sweep.csv
+Expectation: <C> ~ 1/dim for random states.
+
+toy03_invariance_audit.py
+TOY03 — INVARIANCE AUDIT COMPLETE
+Saved → outputs/toy03_invariance_audit.csv
+
+Permutation distance:  mean=0.000e+00  max=0.000e+00
+Unitary distance:      mean=3.990e-17  max=7.161e-17
+
+Expectation: both distances ≈ 0 (numerical noise only).
+
+toy04_frequency_sync.py
+TOY04 — FREQUENCY SYNCHRONIZATION
+N=12 dim=16 K=0.8 noise=0.01
+
+t=000 | R=0.307 | σθ=2.101 | DECOHERED
+t=025 | R=0.570 | σθ=2.430 | DECOHERED
+t=050 | R=0.747 | σθ=2.885 | DECOHERED
+t=075 | R=0.651 | σθ=3.284 | DECOHERED
+t=100 | R=0.344 | σθ=3.634 | DECOHERED
+t=125 | R=0.068 | σθ=4.038 | DECOHERED
+t=150 | R=0.369 | σθ=4.519 | DECOHERED
+t=175 | R=0.373 | σθ=5.021 | DECOHERED
+t=200 | R=0.297 | σθ=5.584 | DECOHERED
+t=225 | R=0.435 | σθ=6.221 | DECOHERED
+t=250 | R=0.497 | σθ=6.829 | DECOHERED
+t=275 | R=0.363 | σθ=7.387 | DECOHERED
+
+Saved CSV → outputs/toy04_frequency_sync.csv
+Interpretation:
+  R → 1   : synchronized (Axiom 3 emergent)
+  R ≈ 0   : incoherent
+
+toy05_conservation_or_lyapunov.py
+TOY05 — LYAPUNOV / ENERGY TEST
+N=10 dim=16 eta=0.05 renormalize=True
+Goal: E=-F should be non-increasing (mostly) if step size is reasonable.
+
+t=000 | F=3.1710 | E=-3.1710 | ΔE=+0.00e+00 | norm_err=1.11e-16 | OK
+t=025 | F=44.9999 | E=-44.9999 | ΔE=-7.60e-05 | norm_err=2.22e-16 | OK
+t=050 | F=45.0000 | E=-45.0000 | ΔE=-6.39e-14 | norm_err=2.22e-16 | OK
+t=075 | F=45.0000 | E=-45.0000 | ΔE=+0.00e+00 | norm_err=1.11e-16 | OK
+t=100 | F=45.0000 | E=-45.0000 | ΔE=+0.00e+00 | norm_err=2.22e-16 | OK
+t=125 | F=45.0000 | E=-45.0000 | ΔE=+0.00e+00 | norm_err=2.22e-16 | OK
+t=150 | F=45.0000 | E=-45.0000 | ΔE=+0.00e+00 | norm_err=0.00e+00 | OK
+t=175 | F=45.0000 | E=-45.0000 | ΔE=+0.00e+00 | norm_err=2.22e-16 | OK
+
+Saved CSV → outputs/toy05_conservation_or_lyapunov.csv
+Monotonicity violations (ΔE>0): 0/199
+Tips:
+ - If you see many violations with renormalize=1, reduce eta (e.g., 0.02).
+ - With renormalize=0, norm drift is expected and E may behave unpredictably.
+
+toy06_competitive_exclusion.py
+TOY06 — COMPETITIVE EXCLUSION / REPULSION
+N=14 dim=16 alpha=0.2
+Goal: reduce coupling (states separate) and possibly form clusters.
+
+t=000 | <C>=0.0625 σ=0.0650 Cmax=0.3033 | λ1=0.868 gap=0.447 | SEPARATING
+t=025 | <C>=0.1754 σ=0.2320 Cmax=0.9372 | λ1=2.492 gap=0.999 | SEPARATING
+t=050 | <C>=0.2121 σ=0.2666 Cmax=0.9930 | λ1=2.943 gap=1.243 | MIXED
+t=075 | <C>=0.2155 σ=0.2713 Cmax=0.9994 | λ1=3.002 gap=1.288 | MIXED
+t=100 | <C>=0.2159 σ=0.2717 Cmax=1.0000 | λ1=3.009 gap=1.294 | MIXED
+t=125 | <C>=0.2159 σ=0.2718 Cmax=1.0000 | λ1=3.009 gap=1.295 | MIXED
+t=150 | <C>=0.2159 σ=0.2718 Cmax=1.0000 | λ1=3.009 gap=1.295 | MIXED
+t=175 | <C>=0.2159 σ=0.2718 Cmax=1.0000 | λ1=3.009 gap=1.295 | MIXED
+t=200 | <C>=0.2159 σ=0.2718 Cmax=1.0000 | λ1=3.009 gap=1.295 | MIXED
+t=225 | <C>=0.2159 σ=0.2718 Cmax=1.0000 | λ1=3.009 gap=1.295 | MIXED
+t=250 | <C>=0.2159 σ=0.2718 Cmax=1.0000 | λ1=3.009 gap=1.295 | MIXED
+t=275 | <C>=0.2159 σ=0.2718 Cmax=1.0000 | λ1=3.009 gap=1.295 | MIXED
+
+Saved CSV → outputs/toy06_competitive_exclusion.csv
+Tips:
+ - If it collapses or behaves oddly, reduce alpha (e.g., 0.05–0.15).
+ - If nothing happens, increase alpha slightly (e.g., 0.25).
+
+toy07_graph_mediation.py
+TOY07 — GRAPH MEDIATION
+N=20 dim=16 trials=200
+Ring k=2 | ER p=0.15 | PA m=2
+
+ring                   | mean(indirect/direct) = 0.0912 | q95=0.1217
+erdos_renyi            | mean(indirect/direct) = 0.0731 | q95=0.1064
+preferential_attachment | mean(indirect/direct) = 0.0806 | q95=0.1066
+
+Saved CSV → outputs/toy07_graph_mediation.csv
+Interpretation:
+ - Higher indirect/direct suggests stronger generic triangulation via topology.
+ - Compare graph types: ring vs ER vs preferential attachment.
+
+toy08_noise_phase_diagram.py
+TOY08 — NOISE PHASE DIAGRAM
+N=12 dim=16 K=0.8
+
+noise= 0.000 | <R>=0.776 ± 0.066
+noise= 0.010 | <R>=0.709 ± 0.109
+noise= 0.020 | <R>=0.457 ± 0.105
+noise= 0.050 | <R>=0.755 ± 0.057
+noise= 0.100 | <R>=0.563 ± 0.031
+noise= 0.200 | <R>=0.366 ± 0.104
+
+Saved CSV → outputs/toy08_noise_phase_diagram.csv
+Interpretation:
+ - Plot <R> vs noise → look for a sharp drop (critical noise).
+ - This defines robustness / breakdown of Axiom 3 dynamics.
+
+toy09_identifiability.py
+TOY09 — IDENTIFIABILITY (Reconstruct ψ from C)
+N=10 dim=8 steps=800 lr=0.05 trials=5
+
+trial=0 step=0000 | loss=1.367e+00 | FITTING
+trial=0 step=0100 | loss=1.360e+01 | FITTING
+trial=0 step=0200 | loss=1.384e+01 | FITTING
+trial=0 step=0300 | loss=1.930e+01 | FITTING
+trial=0 step=0400 | loss=2.341e+01 | FITTING
+trial=0 step=0500 | loss=2.727e+01 | FITTING
+trial=0 step=0600 | loss=2.983e+01 | FITTING
+trial=0 step=0700 | loss=3.067e+01 | FITTING
+trial=0 final loss=3.134e+01
+
+trial=1 step=0000 | loss=1.400e+00 | FITTING
+trial=1 step=0100 | loss=6.974e+00 | FITTING
+trial=1 step=0200 | loss=1.236e+01 | FITTING
+trial=1 step=0300 | loss=1.801e+01 | FITTING
+trial=1 step=0400 | loss=2.202e+01 | FITTING
+trial=1 step=0500 | loss=2.582e+01 | FITTING
+trial=1 step=0600 | loss=2.961e+01 | FITTING
+trial=1 step=0700 | loss=3.230e+01 | FITTING
+trial=1 final loss=3.309e+01
+
+trial=2 step=0000 | loss=1.017e+00 | FITTING
+trial=2 step=0100 | loss=5.757e+00 | FITTING
+trial=2 step=0200 | loss=1.406e+01 | FITTING
+trial=2 step=0300 | loss=2.413e+01 | FITTING
+trial=2 step=0400 | loss=2.882e+01 | FITTING
+trial=2 step=0500 | loss=3.027e+01 | FITTING
+trial=2 step=0600 | loss=3.118e+01 | FITTING
+trial=2 step=0700 | loss=3.191e+01 | FITTING
+trial=2 final loss=3.252e+01
+
+trial=3 step=0000 | loss=1.400e+00 | FITTING
+trial=3 step=0100 | loss=1.990e+01 | FITTING
+trial=3 step=0200 | loss=2.941e+01 | FITTING
+trial=3 step=0300 | loss=3.301e+01 | FITTING
+trial=3 step=0400 | loss=3.376e+01 | FITTING
+trial=3 step=0500 | loss=3.405e+01 | FITTING
+trial=3 step=0600 | loss=3.428e+01 | FITTING
+trial=3 step=0700 | loss=3.444e+01 | FITTING
+trial=3 final loss=3.455e+01
+
+trial=4 step=0000 | loss=1.773e+00 | FITTING
+trial=4 step=0100 | loss=1.089e+01 | FITTING
+trial=4 step=0200 | loss=2.770e+01 | FITTING
+trial=4 step=0300 | loss=3.256e+01 | FITTING
+trial=4 step=0400 | loss=3.337e+01 | FITTING
+trial=4 step=0500 | loss=3.369e+01 | FITTING
+trial=4 step=0600 | loss=3.394e+01 | FITTING
+trial=4 step=0700 | loss=3.414e+01 | FITTING
+trial=4 final loss=3.429e+01
+
+Saved CSV → outputs/toy09_identifiability.csv
+Interpretation:
+ - If loss reliably reaches ~0, C is (at least) realizable by some ψ set.
+ - If loss stalls above a floor, C may be non-identifiable or needs more observables.
+ - Even with near-zero loss, solution is not unique (global unitary/gauge).
+
+toy10_density_bridge.py
+TOY10 — DENSITY BRIDGE (ρ, purity, entropy)
+N=12 dim=16 mode=none eta=0.05 alpha=0.2
+Key check: purity == (N + 2*ΣC_ij)/N^2
+
+t=000 | purity=0.143098 (from C=0.143098, err=0.0e+00) | S=2.127753 | <C>=0.0652 | IDENTITY_OK
+t=025 | purity=0.143098 (from C=0.143098, err=0.0e+00) | S=2.127753 | <C>=0.0652 | IDENTITY_OK
+t=050 | purity=0.143098 (from C=0.143098, err=0.0e+00) | S=2.127753 | <C>=0.0652 | IDENTITY_OK
+t=075 | purity=0.143098 (from C=0.143098, err=0.0e+00) | S=2.127753 | <C>=0.0652 | IDENTITY_OK
+t=100 | purity=0.143098 (from C=0.143098, err=0.0e+00) | S=2.127753 | <C>=0.0652 | IDENTITY_OK
+t=125 | purity=0.143098 (from C=0.143098, err=0.0e+00) | S=2.127753 | <C>=0.0652 | IDENTITY_OK
+t=150 | purity=0.143098 (from C=0.143098, err=0.0e+00) | S=2.127753 | <C>=0.0652 | IDENTITY_OK
+t=175 | purity=0.143098 (from C=0.143098, err=0.0e+00) | S=2.127753 | <C>=0.0652 | IDENTITY_OK
+
+Saved CSV → outputs/toy10_density_bridge.csv
+Interpretation:
+ - purity ↑, entropy ↓ when states become more aligned/coherent.
+ - purity ↓, entropy ↑ when states separate/orthogonalize.
+ - The identity check ties your pairwise C_ij to a global summary (Tr(ρ^2)).
+
+toy09_v2_identifiability.py
+TOY09 v2 — IDENTIFIABILITY WITH PURITY
+N=10 dim=8 λ=10.0
+True purity = 0.221937
+
+step=0000 | loss=1.369e+00 | purity_hat=0.205392 | FITTING
+step=0100 | loss=7.441e+00 | purity_hat=0.402089 | FITTING
+step=0200 | loss=1.147e+01 | purity_hat=0.455962 | FITTING
+step=0300 | loss=1.237e+01 | purity_hat=0.452593 | FITTING
+step=0400 | loss=1.250e+01 | purity_hat=0.452333 | FITTING
+step=0500 | loss=1.254e+01 | purity_hat=0.452710 | FITTING
+step=0600 | loss=1.256e+01 | purity_hat=0.452974 | FITTING
+step=0700 | loss=1.257e+01 | purity_hat=0.453113 | FITTING
+step=0800 | loss=1.258e+01 | purity_hat=0.453173 | FITTING
+step=0900 | loss=1.258e+01 | purity_hat=0.453182 | FITTING
+
+Saved CSV → outputs/toy09_v2_identifiability.csv
+
+toy04_v2_feedback_sync.py
+TOY04 v2 — FEEDBACK SYNCHRONIZATION
+N=12 dim=16 K=0.8 noise=0.01 eps=0.1 gamma=0.5
+
+t=000 | R=0.307 | <C>=0.065 Cmax=0.307 | ||C-C0||/||C0||=0.036 | DECOHERED
+t=025 | R=0.569 | <C>=0.088 Cmax=0.382 | ||C-C0||/||C0||=0.587 | DECOHERED
+t=050 | R=0.805 | <C>=0.124 Cmax=0.430 | ||C-C0||/||C0||=0.918 | COHERENT
+t=075 | R=0.904 | <C>=0.167 Cmax=0.460 | ||C-C0||/||C0||=1.195 | COHERENT
+t=100 | R=0.906 | <C>=0.195 Cmax=0.479 | ||C-C0||/||C0||=1.442 | COHERENT
+t=125 | R=0.908 | <C>=0.210 Cmax=0.489 | ||C-C0||/||C0||=1.600 | COHERENT
+t=150 | R=0.909 | <C>=0.218 Cmax=0.495 | ||C-C0||/||C0||=1.694 | COHERENT
+t=175 | R=0.912 | <C>=0.223 Cmax=0.498 | ||C-C0||/||C0||=1.749 | COHERENT
+t=200 | R=0.913 | <C>=0.225 Cmax=0.500 | ||C-C0||/||C0||=1.783 | COHERENT
+t=225 | R=0.913 | <C>=0.227 Cmax=0.501 | ||C-C0||/||C0||=1.804 | COHERENT
+t=250 | R=0.915 | <C>=0.228 Cmax=0.501 | ||C-C0||/||C0||=1.816 | COHERENT
+t=275 | R=0.916 | <C>=0.229 Cmax=0.502 | ||C-C0||/||C0||=1.825 | COHERENT
+t=300 | R=0.916 | <C>=0.230 Cmax=0.502 | ||C-C0||/||C0||=1.830 | COHERENT
+t=325 | R=0.916 | <C>=0.230 Cmax=0.502 | ||C-C0||/||C0||=1.832 | COHERENT
+t=350 | R=0.918 | <C>=0.230 Cmax=0.502 | ||C-C0||/||C0||=1.836 | COHERENT
+t=375 | R=0.917 | <C>=0.230 Cmax=0.502 | ||C-C0||/||C0||=1.838 | COHERENT
+
+Saved CSV → outputs/toy04_v2_feedback_sync.csv
+Notes:
+ - If it still won't sync, increase eps (0.15–0.30) or K.
+ - If C runs away from baseline, increase gamma or reduce eps.
+ - delta_C_l2 shows how far couplings moved from NCFT baseline.
+
+toy08_v2_noise_ensemble.py
+TOY08 v2 — NOISE ENSEMBLE
+N=12 dim=16 K=0.8 | T=400 burn_in=150 | seeds=10
+
+noise= 0.000 | <R>_seeds=0.494 ± 0.157 | CI95≈±0.097
+noise= 0.010 | <R>_seeds=0.495 ± 0.155 | CI95≈±0.096
+noise= 0.020 | <R>_seeds=0.494 ± 0.154 | CI95≈±0.096
+noise= 0.050 | <R>_seeds=0.489 ± 0.154 | CI95≈±0.095
+noise= 0.100 | <R>_seeds=0.487 ± 0.153 | CI95≈±0.095
+noise= 0.200 | <R>_seeds=0.506 ± 0.149 | CI95≈±0.092
+
+Saved CSV → outputs/toy08_v2_noise_ensemble.csv
+Interpretation:
+ - Look at <R>_seeds vs noise for monotonicity or resonance.
+ - If CI bands overlap heavily, effects may be weak at this N,dim,K.
+
+toy06_v2_entropy_repulsion.py
+TOY06 v2 — ENTROPY REPULSION / DIVERSITY FLOW
+N=14 dim=16 lr=0.05
+Goal: suppress large overlaps (Cmax should not run to 1 and freeze).
+
+t=000 | <C>=0.0625 σ=0.0650 Cmax=0.3033 | J=0.7398 | λ1=0.868 gap=0.447 | DIVERSE
+t=025 | <C>=0.1043 σ=0.1676 Cmax=0.8837 | J=3.5470 | λ1=1.802 gap=0.615 | CLUSTERING
+t=050 | <C>=0.1528 σ=0.2499 Cmax=0.9620 | J=7.8065 | λ1=2.701 gap=1.014 | CLUSTERING
+t=075 | <C>=0.1760 σ=0.2742 Cmax=0.9946 | J=9.6624 | λ1=2.847 gap=0.943 | CLUSTERING
+t=100 | <C>=0.1922 σ=0.2934 Cmax=0.9988 | J=11.1970 | λ1=2.910 gap=0.947 | CLUSTERING
+t=125 | <C>=0.1994 σ=0.2952 Cmax=0.9999 | J=11.5507 | λ1=3.002 gap=1.052 | CLUSTERING
+t=150 | <C>=0.2092 σ=0.2976 Cmax=0.9999 | J=12.0383 | λ1=3.141 gap=1.196 | CLUSTERING
+t=175 | <C>=0.2178 σ=0.2996 Cmax=1.0000 | J=12.4815 | λ1=3.254 gap=1.277 | CLUSTERING
+t=200 | <C>=0.2261 σ=0.3011 Cmax=1.0000 | J=12.9029 | λ1=3.354 gap=1.305 | CLUSTERING
+t=225 | <C>=0.2338 σ=0.3033 Cmax=1.0000 | J=13.3468 | λ1=3.450 gap=1.320 | CLUSTERING
+t=250 | <C>=0.2415 σ=0.3051 Cmax=1.0000 | J=13.7793 | λ1=3.557 gap=1.368 | CLUSTERING
+t=275 | <C>=0.2517 σ=0.3082 Cmax=1.0000 | J=14.4091 | λ1=3.712 gap=1.456 | CLUSTERING
+
+Saved CSV → outputs/toy06_v2_entropy_repulsion.csv
+Tips:
+ - If it changes too slowly, increase lr to 0.08–0.12.
+ - If it becomes unstable, reduce lr to 0.02–0.04.
+ - Compare against Toy06 v1: Cmax should not saturate at 1.
+
+toy10_v2_density_bridge_dynamic.py
+TOY10 v2 — DYNAMIC DENSITY BRIDGE
+N=12 dim=16 mode=none
+
+t=000 | purity=0.1431 | S=2.1278 | <C>=0.0652 | IDENTITY_OK
+t=025 | purity=0.1431 | S=2.1278 | <C>=0.0652 | IDENTITY_OK
+t=050 | purity=0.1431 | S=2.1278 | <C>=0.0652 | IDENTITY_OK
+t=075 | purity=0.1431 | S=2.1278 | <C>=0.0652 | IDENTITY_OK
+t=100 | purity=0.1431 | S=2.1278 | <C>=0.0652 | IDENTITY_OK
+t=125 | purity=0.1431 | S=2.1278 | <C>=0.0652 | IDENTITY_OK
+t=150 | purity=0.1431 | S=2.1278 | <C>=0.0652 | IDENTITY_OK
+t=175 | purity=0.1431 | S=2.1278 | <C>=0.0652 | IDENTITY_OK
+t=200 | purity=0.1431 | S=2.1278 | <C>=0.0652 | IDENTITY_OK
+t=225 | purity=0.1431 | S=2.1278 | <C>=0.0652 | IDENTITY_OK
+t=250 | purity=0.1431 | S=2.1278 | <C>=0.0652 | IDENTITY_OK
+t=275 | purity=0.1431 | S=2.1278 | <C>=0.0652 | IDENTITY_OK
+
+Saved CSV → outputs/toy10_v2_density_bridge_static.csv
+TOY10 v2 — DYNAMIC DENSITY BRIDGE
+N=12 dim=16 mode=cohere
+
+t=000 | purity=0.1431 | S=2.1278 | <C>=0.0652 | IDENTITY_OK
+t=025 | purity=1.0000 | S=0.0000 | <C>=1.0000 | IDENTITY_OK
+t=050 | purity=1.0000 | S=-0.0000 | <C>=1.0000 | IDENTITY_OK
+t=075 | purity=1.0000 | S=-0.0000 | <C>=1.0000 | IDENTITY_OK
+t=100 | purity=1.0000 | S=-0.0000 | <C>=1.0000 | IDENTITY_OK
+t=125 | purity=1.0000 | S=-0.0000 | <C>=1.0000 | IDENTITY_OK
+t=150 | purity=1.0000 | S=-0.0000 | <C>=1.0000 | IDENTITY_OK
+t=175 | purity=1.0000 | S=-0.0000 | <C>=1.0000 | IDENTITY_OK
+t=200 | purity=1.0000 | S=-0.0000 | <C>=1.0000 | IDENTITY_OK
+t=225 | purity=1.0000 | S=-0.0000 | <C>=1.0000 | IDENTITY_OK
+t=250 | purity=1.0000 | S=-0.0000 | <C>=1.0000 | IDENTITY_OK
+t=275 | purity=1.0000 | S=-0.0000 | <C>=1.0000 | IDENTITY_OK
+
+Saved CSV → outputs/toy10_v2_density_bridge_cohere.csv
+TOY10 v2 — DYNAMIC DENSITY BRIDGE
+N=12 dim=16 mode=repel
+
+t=000 | purity=0.1431 | S=2.1278 | <C>=0.0652 | IDENTITY_OK
+t=025 | purity=0.1916 | S=1.8821 | <C>=0.1182 | IDENTITY_OK
+t=050 | purity=0.2465 | S=1.6069 | <C>=0.1780 | IDENTITY_OK
+t=075 | purity=0.2694 | S=1.5009 | <C>=0.2030 | IDENTITY_OK
+t=100 | purity=0.2848 | S=1.4366 | <C>=0.2198 | IDENTITY_OK
+t=125 | purity=0.2927 | S=1.4085 | <C>=0.2284 | IDENTITY_OK
+t=150 | purity=0.3002 | S=1.3840 | <C>=0.2366 | IDENTITY_OK
+t=175 | purity=0.3079 | S=1.3609 | <C>=0.2450 | IDENTITY_OK
+t=200 | purity=0.3159 | S=1.3384 | <C>=0.2537 | IDENTITY_OK
+t=225 | purity=0.3246 | S=1.3152 | <C>=0.2632 | IDENTITY_OK
+t=250 | purity=0.3384 | S=1.2793 | <C>=0.2782 | IDENTITY_OK
+t=275 | purity=0.3709 | S=1.1844 | <C>=0.3137 | IDENTITY_OK
+
+Saved CSV → outputs/toy10_v2_density_bridge_repel.csv
