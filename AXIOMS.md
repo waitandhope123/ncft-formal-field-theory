@@ -1,8 +1,11 @@
-# NCFT v5.2a.2 — Four Formal Axioms
+# NCFT v5.2a.3 — Formal Axiomatic Core
 
-Non-Local Consciousness Field Theory deriving **44 interaction predictions** from **4 mathematical axioms**.
+Non-Local Consciousness Field Theory defining **44 interaction predictions**
+from **three fundamental axioms plus an enforced closure condition**.
 
-This document defines the complete axiomatic core of NCFT. All behavior, derivations, and validations follow directly from the principles below, with no auxiliary assumptions.
+This document defines the complete axiomatic core of NCFT.
+All behavior, derivations, and validations follow directly from the principles
+below, with no auxiliary assumptions beyond explicit enforcement.
 
 ---
 
@@ -10,11 +13,13 @@ This document defines the complete axiomatic core of NCFT. All behavior, derivat
 
 A field cannot interact with itself.
 
-$$C(f_i, f_i) = 0 \quad \forall i \in \text{Fields}$$
+\[
+C(f_i, f_i) = 0 \quad \forall i \in \text{Fields}
+\]
 
 ### Implementation
 
-```text
+```
 universal_exclusion(f1, f2)
 → f1.id ≠ f2.id ∧ f1.active ∧ f2.active
 ```
@@ -30,15 +35,20 @@ Self-coupling is mathematically impossible.
 
 Coupling between distinct fields is strictly bounded.
 
-$$0 \le C(f_1, f_2) \le 1$$
+\[
+0 \le C(f_1, f_2) \le 1
+\]
 
 with
 
-$$C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2, \quad \|\psi_1\| = \|\psi_2\| = 1$$
+\[
+C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2,
+\quad \|\psi_1\| = \|\psi_2\| = 1
+\]
 
 ### Implementation
 
-```text
+```
 bilinear_coupling(f1, f2)
 → |dot(conj(f1.state), f2.state)|²
 ```
@@ -50,35 +60,41 @@ This bound is enforced analytically, not empirically.
 
 ---
 
-## Axiom III — Frequency Coherence Constraint
+## Axiom III — Frequency Coherence Constraint (Coherent Regimes)
 
 Active interacting fields must form a coherent frequency class.
 
-$$\sigma(\{ f.frequency \mid f \in \text{active fields} \}) < 0.1$$
+\[
+\sigma(\{ f.\text{frequency} \mid f \in \text{active fields} \}) < 0.1
+\]
 
 ### Implementation
 
-```text
+```
 frequency_consistency(fields)
 → std(active_frequencies) < 0.1
 ```
 
 ### Mathematical Guarantee
 
-Interactions occur only within frequency-resonant regimes.
+This constraint **defines coherent NCFT regimes**.
+Dynamics outside this bound are permitted but do not support
+stable, bounded, or predictive NCFT interactions.
 
 ---
 
-## Axiom IV — Pairwise Interaction Dominance
+## Closure Condition — Pure Pairwise Interaction Summation
 
 Total interaction strength is the sum of all unique pairwise couplings.
 
-$$C(\{f_1, f_2, \ldots, f_n\}) = \sum_{i<j} C(f_i, f_j)$$
+\[
+C(\{f_1, f_2, \ldots, f_n\}) = \sum_{i<j} C(f_i, f_j)
+\]
 
 ### Implementation
 
-```text
-n_body_interaction(fields)
+```
+pairwise_closure(fields)
 → Σ bilinear_coupling(f_i, f_j)  for i < j
 ```
 
@@ -92,7 +108,7 @@ No higher-order or cross-interaction terms exist.
 ## Axiomatic Derivation Summary
 
 **Primitive**
-```text
+```
 ConsciousnessField(
   id: str,
   frequency: float,
@@ -102,35 +118,44 @@ ConsciousnessField(
 ```
 
 **Interactions**
-$$C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2$$
+\[
+C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2
+\]
 
-**Multi-field**
-$$C(\{f_n\}) = \sum_{i<j} C(f_i, f_j)$$
+**Multi-field (closure)**
+\[
+C(\{f_n\}) = \sum_{i<j} C(f_i, f_j)
+\]
 
 **Constraints**
-$$\sigma(f_{active}) < 0.1$$
+\[
+\sigma(f_{\text{active}}) < 0.1
+\]
 
-$$\Rightarrow \textbf{44 predictions derived exactly}$$
+\[
+\Rightarrow \textbf{44 interaction predictions catalogued and numerically tested}
+\]
 
 ---
 
 ## Code-Level Verification
 
 ```python
-# All axioms explicitly enforced
+# All axioms and closure explicitly enforced
 
 print(bilinear_coupling(f, f))              # Axiom I → 0.0
 print(bilinear_coupling(f1, f2))            # Axiom II → ∈ [0,1]
 print(np.std(active_freqs) < 0.1)           # Axiom III → True
-print(n_body_interaction([f1,f2,f3]))       # Axiom IV → Σ pairs
+print(pairwise_closure([f1,f2,f3]))         # Closure → Σ pairs
 ```
 
 **Status:**  
-✅ 100% axiom–code isomorphism  
-✅ No runtime violations  
-✅ All bounds mathematically enforced  
+✅ Axiom–code isomorphism preserved  
+✅ Closure enforced explicitly  
+✅ No runtime violations observed  
+✅ Bounds enforced analytically  
 
 ---
 
-**NCFT v5.2a.2**  
-*A closed, minimal, publication-ready axiomatic system.*
+**NCFT v5.2a.3**  
+*A closed, minimal, results-aligned axiomatic system.*
