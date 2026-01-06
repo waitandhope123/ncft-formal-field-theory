@@ -1,4 +1,4 @@
-# NCFT TOY VALIDATION SUMMARY – RESULTS-ALIGNED CONSOLIDATION (v5.2a.2)
+# NCFT TOY VALIDATION SUMMARY – RESULTS-ALIGNED CONSOLIDATION (v5.2a.3)
 
 This document summarizes the validated behavior of the NCFT toy suite based strictly on
 recorded numerical outputs. Each claim explicitly references the filename(s) from which
@@ -189,7 +189,7 @@ Status: Deprecated due to axiom violations, instability, or supersession.
 
 ---
 
-**NCFT v5.2a.2**  
+**NCFT v5.2a.3**  
 Formal minimal field-theoretic model  
 Numerically validated across axioms, scaling, stability, and coupled dynamics  
 (Claims restricted to demonstrated results)
