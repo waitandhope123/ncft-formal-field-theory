@@ -1,4 +1,4 @@
-# CONCLUSIONS — RESULTS-ALIGNED (NCFT v5.2a.2)
+# CONCLUSIONS — RESULTS-ALIGNED (NCFT v5.2a.3)
 
 This conclusions document reflects only what is directly supported by recorded
 numerical results from the NCFT toy suite. Interpretive statements are explicitly
@@ -124,7 +124,7 @@ and produced a stable, reproducible computational framework.
 
 ## FINAL STATEMENT
 
-**NCFT v5.2a.2** constitutes a **numerically validated, axiomatic field-theoretic model**
+**NCFT v5.2a.3** constitutes a **numerically validated, axiomatic field-theoretic model**
 with demonstrable stability, scaling structure, and internal phenomenology.
 
 Claims beyond this scope (experimental detectability, biomedical relevance,
