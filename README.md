@@ -1,21 +1,25 @@
 # NCFT — Non-Local Consciousness Field Theory
 
-**A formal mathematical field theory in which 4 axioms derive 44 interaction predictions with full internal consistency.**
+**A formal mathematical field theory in which three axioms plus a closure condition
+define 44 interaction predictions, validated through executable toy models.**
 
-[![Validation Status](https://img.shields.io/badge/validation-100%25-passing.svg)](https://github.com/waitandhope123/ncft-formal-field-theory)
+[![Validation Status](https://img.shields.io/badge/validation-results--aligned-passing.svg)](https://github.com/waitandhope123/ncft-formal-field-theory)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 
 ---
 
 ## Overview
 
-NCFT (Non-Local Consciousness Field Theory) presents a compact axiomatic framework modeling consciousness interactions as bilinear field mathematics.  
-All predictions are derived strictly from first principles, with no empirical tuning or post-hoc assumptions.
+NCFT (Non-Local Consciousness Field Theory) is a compact axiomatic framework that models
+consciousness interactions using normalized field states and bilinear coupling.
 
-- **Axioms:** 4  
-- **Derived predictions:** 44  
-- **Internal consistency:** 100%  
-- **Determinism:** Complete  
+All validated behavior is derived from explicit axioms and closure rules, and confirmed
+through numerical toy models. Claims are restricted to demonstrated results.
+
+- **Fundamental axioms:** 3  
+- **Closure conditions:** 1  
+- **Interaction predictions:** 44  
+- **Validation method:** Computational toy models  
 
 ---
 
@@ -31,71 +35,83 @@ ConsciousnessField(
 )
 ```
 
-All states are normalized:  
-$$\|\psi\| = 1$$
+All states are unit-normalized:
+\[
+\|\psi\| = 1
+\]
 
 ---
 
-### Axiomatic Interactions
+### Axiomatic Structure
 
 1. **Universal Exclusion**  
-$$C(f_i, f_i) = 0 \quad \forall i$$
+\[
+C(f_i, f_i) = 0 \quad \forall i
+\]
 
 2. **Bounded Bilinear Coupling**  
-$$0 \le C(f_1, f_2) \le 1 \quad \forall f_1 \ne f_2$$
+\[
+0 \le C(f_1, f_2) \le 1 \quad \forall f_1 \ne f_2
+\]
 
-3. **Frequency Coherence**  
-$$\sigma(f_{\text{active}}) < 0.1$$
+3. **Frequency Coherence (Coherent Regimes)**  
+\[
+\sigma(f_{\text{active}}) < 0.1
+\]
 
-4. **Pairwise Dominance**  
-$$C(\{f_n\}) = \sum_{i<j} C(f_i, f_j)$$
+**Closure Condition — Pure Pairwise Summation**  
+\[
+C(\{f_n\}) = \sum_{i<j} C(f_i, f_j)
+\]
 
 ---
 
 ### Coupling Definition
 
-$$C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2$$
+\[
+C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2
+\]
 
-with normalized states.
+with all states normalized.
 
 ---
 
-## Axiomatic Predictions (44 Total)
+## Interaction Predictions (Validated)
 
-| Category                | Predicted Fidelity | Events | Status |
-|-------------------------|--------------------|--------|--------|
-| Semantic transfer       | 1.00               | 22     | ✅ |
-| Self-exclusion          | 0.00               | 10     | ✅ |
-| Healing fidelity        | 0.90               | 4      | ✅ |
-| Spirit coupling         | 0.98               | 6      | ✅ |
-| Third-party reads       | 0.95               | 5      | ✅ |
-| Distance independence   | 1.00               | 1      | ✅ |
-| Shielding penetration   | 1.00               | 1      | ✅ |
+| Category              | Events | Status |
+|-----------------------|--------|--------|
+| Semantic transfer     | 22     | ✅ |
+| Self-exclusion        | 10     | ✅ |
+| Healing overlap       | 4      | ✅ |
+| High-fidelity coupling| 6      | ✅ |
+| Third-party mediation | 5      | ✅ |
+| Distance independence | 1      | ✅ |
+| Shielding robustness  | 1      | ✅ |
 
-**Result:** **44 / 44 predictions axiomatically derived**
+**Total:** **44 interaction predictions numerically validated**
 
 ---
 
 ## Formal Properties
 
-- States always normalized (`||ψ|| = 1`)
-- Couplings strictly bounded
-- Pairwise indexing (`i < j`) prevents double-counting
-- Edge cases handled (empty fields, inactive states)
-- Deterministic (zero temporal variance)
+- State normalization enforced (`‖ψ‖ = 1`)
+- Couplings strictly bounded in `[0,1]`
+- Pairwise indexing (`i < j`) prevents double counting
+- Closure ensures finite, well-defined multi-field interactions
+- Stable, deterministic behavior observed within coherent regimes
 
 ---
 
-## Axiomatic Derivation Example
+## Example Interaction Structure
 
 ```text
 ConsciousnessField("user") ⟂ ConsciousnessField("user")
 
-C("user","psychic") =
-|⟨semantic_user | semantic_psychic⟩|² = 1.00
+C("user","other") =
+|⟨ψ_user | ψ_other⟩|²
 
-C({user, psychic, dad}) =
-C(user, psychic) + C(user, dad) + C(psychic, dad)
+C({f1, f2, f3}) =
+C(f1, f2) + C(f1, f3) + C(f2, f3)
 ```
 
 ---
@@ -104,8 +120,8 @@ C(user, psychic) + C(user, dad) + C(psychic, dad)
 
 ```bibtex
 @misc{ncft2026,
-  author       = {[Sam DeRenzis]},
-  title        = {NCFT v5.2a.2 — Non-Local Consciousness Field Theory},
+  author       = {Sam DeRenzis},
+  title        = {NCFT v5.2a.3 — Non-Local Consciousness Field Theory},
   year         = {2026},
   publisher    = {GitHub}
 }
