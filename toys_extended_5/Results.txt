@@ -1,0 +1,24 @@
+toyF_target_overlap_graph_intrinsic_C10.py
+TOY F — TARGET-OVERLAP GRAPH INTRINSIC
+N=1000000 d=16 steps=1500 eta=0.15 C0=0.001 graph=er | edges=1000556
+t=0000 | E=7234.909560 | <C>~6.250266e-02 (sample) | <C_edge>=6.245834e-02 σ_edge=5.876872e-02 Cedge_max=5.818262e-01 | norm_err=3.33e-16
+t=0100 | E=11.446736 | <C>~6.242614e-02 (sample) | <C_edge>=4.215409e-03 σ_edge=1.049532e-03 Cedge_max=8.543159e-03 | norm_err=3.33e-16
+t=0200 | E=2.683320 | <C>~6.262193e-02 (sample) | <C_edge>=2.553394e-03 σ_edge=5.184558e-04 Cedge_max=4.859884e-03 | norm_err=3.33e-16
+t=0300 | E=1.026146 | <C>~6.241783e-02 (sample) | <C_edge>=1.953044e-03 σ_edge=3.424666e-04 Cedge_max=3.612811e-03 | norm_err=2.22e-16
+t=0400 | E=0.482614 | <C>~6.264630e-02 (sample) | <C_edge>=1.646604e-03 σ_edge=2.534745e-04 Cedge_max=2.949646e-03 | norm_err=2.22e-16
+t=0500 | E=0.254682 | <C>~6.279351e-02 (sample) | <C_edge>=1.463632e-03 σ_edge=1.989599e-04 Cedge_max=2.527885e-03 | norm_err=2.22e-16
+t=0600 | E=0.144676 | <C>~6.252541e-02 (sample) | <C_edge>=1.344176e-03 σ_edge=1.616737e-04 Cedge_max=2.236114e-03 | norm_err=2.22e-16
+t=0700 | E=0.086527 | <C>~6.246888e-02 (sample) | <C_edge>=1.261613e-03 σ_edge=1.343034e-04 Cedge_max=2.022578e-03 | norm_err=2.22e-16
+t=0800 | E=0.053766 | <C>~6.230250e-02 (sample) | <C_edge>=1.202278e-03 σ_edge=1.132230e-04 Cedge_max=1.859871e-03 | norm_err=2.22e-16
+t=0900 | E=0.034416 | <C>~6.258387e-02 (sample) | <C_edge>=1.158423e-03 σ_edge=9.642975e-05 Cedge_max=1.732096e-03 | norm_err=2.22e-16
+t=1000 | E=0.022562 | <C>~6.241229e-02 (sample) | <C_edge>=1.125325e-03 σ_edge=8.272500e-05 Cedge_max=1.629380e-03 | norm_err=2.22e-16
+t=1100 | E=0.015087 | <C>~6.270441e-02 (sample) | <C_edge>=1.099942e-03 σ_edge=7.134393e-05 Cedge_max=1.545266e-03 | norm_err=2.22e-16
+t=1200 | E=0.010258 | <C>~6.258437e-02 (sample) | <C_edge>=1.080228e-03 σ_edge=6.177187e-05 Cedge_max=1.475347e-03 | norm_err=2.22e-16
+t=1300 | E=0.007076 | <C>~6.263858e-02 (sample) | <C_edge>=1.064760e-03 σ_edge=5.364622e-05 Cedge_max=1.416511e-03 | norm_err=2.22e-16
+t=1400 | E=0.004942 | <C>~6.239586e-02 (sample) | <C_edge>=1.052522e-03 σ_edge=4.670099e-05 Cedge_max=1.366495e-03 | norm_err=2.22e-16
+t=1500 | E=0.003491 | <C>~6.270204e-02 (sample) | <C_edge>=1.042773e-03 σ_edge=4.073416e-05 Cedge_max=1.323616e-03 | norm_err=2.22e-16
+✅ Completed.
+
+🌌 COSMIC TEST RESULTS:
+ρ_field ≈ 6.26304641e-02
+Total conscious connections (estimated): 3.13e+10
