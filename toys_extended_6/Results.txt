@@ -1,0 +1,30 @@
+ncft_discriminative_validation_toy.py
+=== Rank stability ===
+NCFT : 1.0
+Null : 1.0
+
+=== Top-k partner stability ===
+NCFT : 0.38786696395392045
+Null : 0.4222408026755853
+
+=== Mean entropy ===
+NCFT : 6.217827439502406
+Null : 6.125362324135537
+
+ncft_constraint_violation_stress_toy.py
+C:\Users\waita\AppData\Local\Programs\Python\Python314\Lib\site-packages\numpy\linalg\_linalg.py:2803: RuntimeWarning: overflow encountered in multiply
+  s = (x.conj() * x).real
+C:\users\waita\downloads\ncft_constraint_violation_stress_toy.py:23: RuntimeWarning: overflow encountered in scalar power
+  return abs(np.vdot(a, b))**2
+
+=== NCFT SYSTEM ===
+Max norm: 1.0000000000000002
+Max coupling: 0.9999914244761064
+Overflow detected: False
+NaNs detected: False
+
+=== NULL SYSTEM ===
+Max norm: inf
+Max coupling: inf
+Overflow detected: True
+NaNs detected: False
