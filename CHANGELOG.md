@@ -5,6 +5,25 @@ Versioning reflects increasing formal rigor, axiomatic clarity, and code–math 
 
 ---
 
+## v5.2a.3 — Results-Aligned Release (2026-01-06)
+
+**Status:** Public release
+
+### Clarified
+- Reframed axiomatic structure as three fundamental axioms plus an enforced
+  closure condition (no mathematical changes)
+- Distinguished physical axioms from mathematical aggregation rules
+
+### Aligned
+- Documentation, README, axioms, predictions, and preprint metadata
+- Explicit separation of validated results from exploratory extensions
+
+### Confirmed
+- No changes to equations, toy results, or derived predictions
+- Full backward compatibility with v5.2a.2 mathematics
+
+---
+
 ## v5.2a.2 — Formal Coherence Complete (2026-01-03)
 
 **Status:** Publication-ready
