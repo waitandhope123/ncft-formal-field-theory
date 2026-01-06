@@ -1,0 +1,91 @@
+toyF_target_overlap_graph_intrinsic_C25.py
+TOY F — TARGET-OVERLAP GRAPH INTRINSIC
+N=50 d=16 steps=1500 eta=0.15 C0=0.25 graph=ring | edges=200
+t=0000 | E=7.584295 | <C>=0.062526 σ=0.059340 Cmax=0.366759 gt1=0 | norm_err=2.22e-16
+t=0100 | E=0.001471 | <C>=0.096705 σ=0.091655 Cmax=0.553700 gt1=0 | norm_err=2.22e-16
+t=0200 | E=0.000036 | <C>=0.096957 σ=0.092167 Cmax=0.571413 gt1=0 | norm_err=2.22e-16
+t=0300 | E=0.000001 | <C>=0.096996 σ=0.092246 Cmax=0.580511 gt1=0 | norm_err=2.22e-16
+t=0400 | E=0.000000 | <C>=0.097002 σ=0.092258 Cmax=0.581874 gt1=0 | norm_err=2.22e-16
+t=0500 | E=0.000000 | <C>=0.097003 σ=0.092260 Cmax=0.582076 gt1=0 | norm_err=2.22e-16
+t=0600 | E=0.000000 | <C>=0.097003 σ=0.092260 Cmax=0.582105 gt1=0 | norm_err=2.22e-16
+t=0700 | E=0.000000 | <C>=0.097003 σ=0.092260 Cmax=0.582110 gt1=0 | norm_err=2.22e-16
+t=0800 | E=0.000000 | <C>=0.097003 σ=0.092260 Cmax=0.582110 gt1=0 | norm_err=2.22e-16
+t=0900 | E=0.000000 | <C>=0.097003 σ=0.092260 Cmax=0.582110 gt1=0 | norm_err=2.22e-16
+t=1000 | E=0.000000 | <C>=0.097003 σ=0.092260 Cmax=0.582110 gt1=0 | norm_err=2.22e-16
+t=1100 | E=0.000000 | <C>=0.097003 σ=0.092260 Cmax=0.582110 gt1=0 | norm_err=2.22e-16
+t=1200 | E=0.000000 | <C>=0.097003 σ=0.092260 Cmax=0.582110 gt1=0 | norm_err=2.22e-16
+t=1300 | E=0.000000 | <C>=0.097003 σ=0.092260 Cmax=0.582110 gt1=0 | norm_err=2.22e-16
+t=1400 | E=0.000000 | <C>=0.097003 σ=0.092260 Cmax=0.582110 gt1=0 | norm_err=2.22e-16
+t=1500 | E=0.000000 | <C>=0.097003 σ=0.092260 Cmax=0.582110 gt1=0 | norm_err=2.22e-16
+✅ Completed.
+
+toyS_structure_metrics.py
+TOY S — STRUCTURE METRICS
+N=50 d=16
+Pairwise: <C>=0.097003 σ=0.092260 Cmax=0.582110
+Effective rank (Gram-derived): 6.315  (1.0 means collapsed)
+Spectral embedding dims: 6 | KMeans clusters: 4
+Cluster sizes: {0: 12, 1: 10, 2: 20, 3: 8}
+Within-cluster compactness (lower => tighter): 0.605876
+
+toyF_target_overlap_graph_intrinsic_C40.py
+TOY F — TARGET-OVERLAP GRAPH INTRINSIC
+N=50 d=16 steps=1500 eta=0.15 C0=0.4 graph=ring | edges=200
+t=0000 | E=23.224930 | <C>=0.062526 σ=0.059340 Cmax=0.366759 gt1=0 | norm_err=2.22e-16
+t=0100 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496289 gt1=0 | norm_err=2.22e-16
+t=0200 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496292 gt1=0 | norm_err=2.22e-16
+t=0300 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496292 gt1=0 | norm_err=2.22e-16
+t=0400 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496292 gt1=0 | norm_err=2.22e-16
+t=0500 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496292 gt1=0 | norm_err=2.22e-16
+t=0600 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496292 gt1=0 | norm_err=2.22e-16
+t=0700 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496292 gt1=0 | norm_err=2.22e-16
+t=0800 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496292 gt1=0 | norm_err=2.22e-16
+t=0900 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496292 gt1=0 | norm_err=2.22e-16
+t=1000 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496292 gt1=0 | norm_err=2.22e-16
+t=1100 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496292 gt1=0 | norm_err=2.22e-16
+t=1200 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496292 gt1=0 | norm_err=2.22e-16
+t=1300 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496292 gt1=0 | norm_err=2.22e-16
+t=1400 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496292 gt1=0 | norm_err=2.22e-16
+t=1500 | E=0.000000 | <C>=0.132589 σ=0.136943 Cmax=0.496292 gt1=0 | norm_err=2.22e-16
+Saved outputs/toyF_final_psis.npy
+✅ Completed.
+
+oyS_structure_metrics.py
+TOY S — STRUCTURE METRICS
+N=50 d=16
+Pairwise: <C>=0.132589 σ=0.136943 Cmax=0.496292
+Effective rank (Gram-derived): 4.415  (1.0 means collapsed)
+Spectral embedding dims: 6 | KMeans clusters: 4
+Cluster sizes: {0: 12, 1: 10, 2: 12, 3: 16}
+Within-cluster compactness (lower => tighter): 0.569185
+
+toyF_target_overlap_graph_intrinsic_C10.py
+TOY F — TARGET-OVERLAP GRAPH INTRINSIC
+N=50 d=16 steps=1500 eta=0.15 C0=0.1 graph=ring | edges=200
+t=0000 | E=0.943659 | <C>=0.062526 σ=0.059340 Cmax=0.366759 gt1=0 | norm_err=2.22e-16
+t=0100 | E=0.000000 | <C>=0.067843 σ=0.055919 Cmax=0.349141 gt1=0 | norm_err=2.22e-16
+t=0200 | E=0.000000 | <C>=0.067845 σ=0.055920 Cmax=0.349136 gt1=0 | norm_err=2.22e-16
+t=0300 | E=0.000000 | <C>=0.067845 σ=0.055920 Cmax=0.349136 gt1=0 | norm_err=2.22e-16
+t=0400 | E=0.000000 | <C>=0.067845 σ=0.055920 Cmax=0.349136 gt1=0 | norm_err=2.22e-16
+t=0500 | E=0.000000 | <C>=0.067845 σ=0.055920 Cmax=0.349136 gt1=0 | norm_err=2.22e-16
+t=0600 | E=0.000000 | <C>=0.067845 σ=0.055920 Cmax=0.349136 gt1=0 | norm_err=2.22e-16
+t=0700 | E=0.000000 | <C>=0.067845 σ=0.055920 Cmax=0.349136 gt1=0 | norm_err=2.22e-16
+t=0800 | E=0.000000 | <C>=0.067845 σ=0.055920 Cmax=0.349136 gt1=0 | norm_err=2.22e-16
+t=0900 | E=0.000000 | <C>=0.067845 σ=0.055920 Cmax=0.349136 gt1=0 | norm_err=2.22e-16
+t=1000 | E=0.000000 | <C>=0.067845 σ=0.055920 Cmax=0.349136 gt1=0 | norm_err=2.22e-16
+t=1100 | E=0.000000 | <C>=0.067845 σ=0.055920 Cmax=0.349136 gt1=0 | norm_err=2.22e-16
+t=1200 | E=0.000000 | <C>=0.067845 σ=0.055920 Cmax=0.349136 gt1=0 | norm_err=2.22e-16
+t=1300 | E=0.000000 | <C>=0.067845 σ=0.055920 Cmax=0.349136 gt1=0 | norm_err=2.22e-16
+t=1400 | E=0.000000 | <C>=0.067845 σ=0.055920 Cmax=0.349136 gt1=0 | norm_err=2.22e-16
+t=1500 | E=0.000000 | <C>=0.067845 σ=0.055920 Cmax=0.349136 gt1=0 | norm_err=2.22e-16
+Saved outputs/toyF_final_psis.npy
+✅ Completed.
+
+toyS_structure_metrics.py
+TOY S — STRUCTURE METRICS
+N=50 d=16
+Pairwise: <C>=0.067845 σ=0.055920 Cmax=0.349136
+Effective rank (Gram-derived): 9.387  (1.0 means collapsed)
+Spectral embedding dims: 6 | KMeans clusters: 4
+Cluster sizes: {0: 7, 1: 11, 2: 16, 3: 16}
+Within-cluster compactness (lower => tighter): 0.640956
