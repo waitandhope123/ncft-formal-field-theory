@@ -1,0 +1,27 @@
+toy17_critical_slowing_scan.py
+
+Toy 17 summary:
+  sigma=0.0000: τ = 1.0 ± 0.0
+  sigma=0.0020: τ not observed (effectively infinite)
+  sigma=0.0050: τ not observed (effectively infinite)
+  sigma=0.0100: τ not observed (effectively infinite)
+  sigma=0.0200: τ not observed (effectively infinite)
+  sigma=0.0400: τ not observed (effectively infinite)
+  sigma=0.0600: τ not observed (effectively infinite)
+
+py toy17_critical_slowing_scan_v2.py
+
+Toy 17 v2 summary:
+  sigma=0.0000: τ = 1.0 ± 0.0
+  sigma=0.0020: τ = 2.0 ± 0.0
+  sigma=0.0050: τ = 1.7 ± 0.5
+  sigma=0.0100: τ = 1.7 ± 0.5
+  sigma=0.0200: τ = 2.3 ± 0.5
+  sigma=0.0400: τ = 2.0 ± 0.0
+
+toy18_graph_topology_comparison_v4.py
+
+Toy 18 v4: correlation length by topology
+  Ring: ξ ≈ 4.35
+  Small-world: ξ ≈ 2.13
+  Random regular: ξ ≈ 4.14
