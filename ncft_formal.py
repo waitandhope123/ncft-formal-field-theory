@@ -135,7 +135,7 @@ def complete_formal_validation():
     ]
     
     print("═" * 115)
-    print("     NCFT v5.2a.2 - FORMAL MINIMAL THEORY (FINAL COHERENCE)")
+    print("     NCFT v5.2a.4 - FORMAL MINIMAL THEORY (FINAL COHERENCE)")
     print("     4 AXIOMS LITERALLY ENFORCED → 100% INTERNALLY CONSISTENT")
     print("═" * 115)
     
