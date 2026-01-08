@@ -1,0 +1,497 @@
+py toy_phase_scale_atlas.py
+Running N=6, d=4, eta=0.01, projected=True
+Running N=6, d=4, eta=0.01, projected=False
+C:\users\waita\downloads\toy_phase_scale_atlas.py:28: RuntimeWarning: overflow encountered in matmul
+  inner = psis @ psis.conj().T
+C:\users\waita\downloads\toy_phase_scale_atlas.py:28: RuntimeWarning: invalid value encountered in matmul
+  inner = psis @ psis.conj().T
+C:\users\waita\downloads\toy_phase_scale_atlas.py:52: RuntimeWarning: overflow encountered in matmul
+  C_inner = psis @ psis.conj().T
+C:\users\waita\downloads\toy_phase_scale_atlas.py:52: RuntimeWarning: invalid value encountered in matmul
+  C_inner = psis @ psis.conj().T
+Running N=6, d=4, eta=0.05, projected=True
+Running N=6, d=4, eta=0.05, projected=False
+C:\users\waita\downloads\toy_phase_scale_atlas.py:29: RuntimeWarning: overflow encountered in square
+  C = np.abs(inner) ** 2
+C:\users\waita\downloads\toy_phase_scale_atlas.py:56: RuntimeWarning: overflow encountered in multiply
+  C_inner[i, :, None] * psis,
+C:\Users\waita\AppData\Local\Programs\Python\Python314\Lib\site-packages\numpy\_core\fromnumeric.py:83: RuntimeWarning: invalid value encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+C:\users\waita\downloads\toy_phase_scale_atlas.py:55: RuntimeWarning: invalid value encountered in multiply
+  grads[i] = -2.0 * np.sum(
+Running N=6, d=8, eta=0.01, projected=True
+Running N=6, d=8, eta=0.01, projected=False
+Running N=6, d=8, eta=0.05, projected=True
+Running N=6, d=8, eta=0.05, projected=False
+Running N=6, d=16, eta=0.01, projected=True
+Running N=6, d=16, eta=0.01, projected=False
+Running N=6, d=16, eta=0.05, projected=True
+Running N=6, d=16, eta=0.05, projected=False
+Running N=12, d=4, eta=0.01, projected=True
+Running N=12, d=4, eta=0.01, projected=False
+Running N=12, d=4, eta=0.05, projected=True
+Running N=12, d=4, eta=0.05, projected=False
+Running N=12, d=8, eta=0.01, projected=True
+Running N=12, d=8, eta=0.01, projected=False
+Running N=12, d=8, eta=0.05, projected=True
+Running N=12, d=8, eta=0.05, projected=False
+Running N=12, d=16, eta=0.01, projected=True
+Running N=12, d=16, eta=0.01, projected=False
+Running N=12, d=16, eta=0.05, projected=True
+Running N=12, d=16, eta=0.05, projected=False
+Running N=24, d=4, eta=0.01, projected=True
+Running N=24, d=4, eta=0.01, projected=False
+Running N=24, d=4, eta=0.05, projected=True
+Running N=24, d=4, eta=0.05, projected=False
+Running N=24, d=8, eta=0.01, projected=True
+Running N=24, d=8, eta=0.01, projected=False
+Running N=24, d=8, eta=0.05, projected=True
+Running N=24, d=8, eta=0.05, projected=False
+Running N=24, d=16, eta=0.01, projected=True
+Running N=24, d=16, eta=0.01, projected=False
+Running N=24, d=16, eta=0.05, projected=True
+Running N=24, d=16, eta=0.05, projected=False
+Saved phase_scale_atlas_results.csv
+
+toy_topology_kernel_stress.py
+[1/32] graph=complete N=12 d=8 eta=0.01 (p=0.0 k=0 beta=0.0)
+[2/32] graph=er N=12 d=8 eta=0.01 (p=0.25 k=0 beta=0.0)
+[3/32] graph=ring N=12 d=8 eta=0.01 (p=0.0 k=4 beta=0.0)
+[4/32] graph=small_world N=12 d=8 eta=0.01 (p=0.0 k=4 beta=0.2)
+[5/32] graph=complete N=12 d=8 eta=0.05 (p=0.0 k=0 beta=0.0)
+[6/32] graph=er N=12 d=8 eta=0.05 (p=0.25 k=0 beta=0.0)
+[7/32] graph=ring N=12 d=8 eta=0.05 (p=0.0 k=4 beta=0.0)
+[8/32] graph=small_world N=12 d=8 eta=0.05 (p=0.0 k=4 beta=0.2)
+[9/32] graph=complete N=12 d=16 eta=0.01 (p=0.0 k=0 beta=0.0)
+[10/32] graph=er N=12 d=16 eta=0.01 (p=0.25 k=0 beta=0.0)
+[11/32] graph=ring N=12 d=16 eta=0.01 (p=0.0 k=4 beta=0.0)
+[12/32] graph=small_world N=12 d=16 eta=0.01 (p=0.0 k=4 beta=0.2)
+[13/32] graph=complete N=12 d=16 eta=0.05 (p=0.0 k=0 beta=0.0)
+[14/32] graph=er N=12 d=16 eta=0.05 (p=0.25 k=0 beta=0.0)
+[15/32] graph=ring N=12 d=16 eta=0.05 (p=0.0 k=4 beta=0.0)
+[16/32] graph=small_world N=12 d=16 eta=0.05 (p=0.0 k=4 beta=0.2)
+[17/32] graph=complete N=24 d=8 eta=0.01 (p=0.0 k=0 beta=0.0)
+[18/32] graph=er N=24 d=8 eta=0.01 (p=0.25 k=0 beta=0.0)
+[19/32] graph=ring N=24 d=8 eta=0.01 (p=0.0 k=4 beta=0.0)
+[20/32] graph=small_world N=24 d=8 eta=0.01 (p=0.0 k=4 beta=0.2)
+[21/32] graph=complete N=24 d=8 eta=0.05 (p=0.0 k=0 beta=0.0)
+[22/32] graph=er N=24 d=8 eta=0.05 (p=0.25 k=0 beta=0.0)
+[23/32] graph=ring N=24 d=8 eta=0.05 (p=0.0 k=4 beta=0.0)
+[24/32] graph=small_world N=24 d=8 eta=0.05 (p=0.0 k=4 beta=0.2)
+[25/32] graph=complete N=24 d=16 eta=0.01 (p=0.0 k=0 beta=0.0)
+[26/32] graph=er N=24 d=16 eta=0.01 (p=0.25 k=0 beta=0.0)
+[27/32] graph=ring N=24 d=16 eta=0.01 (p=0.0 k=4 beta=0.0)
+[28/32] graph=small_world N=24 d=16 eta=0.01 (p=0.0 k=4 beta=0.2)
+[29/32] graph=complete N=24 d=16 eta=0.05 (p=0.0 k=0 beta=0.0)
+[30/32] graph=er N=24 d=16 eta=0.05 (p=0.25 k=0 beta=0.0)
+[31/32] graph=ring N=24 d=16 eta=0.05 (p=0.0 k=4 beta=0.0)
+[32/32] graph=small_world N=24 d=16 eta=0.05 (p=0.0 k=4 beta=0.2)
+Saved topology_kernel_stress_results.csv
+
+toy_noise_open_system_robustness.py
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.0 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.0 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.0 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.0 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.0 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.0 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.0 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.0 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.0 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.0 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.0 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.0 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.005 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.005 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.005 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.005 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.005 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.005 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.005 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.005 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.005 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.005 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.005 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.005 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.01 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.01 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.01 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.01 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.01 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.01 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.01 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.01 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.01 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.01 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.01 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.01 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.02 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.02 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.02 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.02 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.02 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.02 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.02 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.02 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.02 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.02 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.02 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.02 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.05 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.05 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.05 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.05 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.05 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.05 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.05 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.05 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.05 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.05 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=7 proj=True sigma=0.05 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=7 proj=False sigma=0.05 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.0 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.0 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.0 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.0 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.0 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.0 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.0 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.0 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.0 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.0 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.0 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.0 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.005 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.005 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.005 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.005 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.005 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.005 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.005 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.005 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.005 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.005 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.005 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.005 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.01 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.01 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.01 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.01 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.01 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.01 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.01 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.01 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.01 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.01 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.01 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.01 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.02 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.02 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.02 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.02 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.02 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.02 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.02 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.02 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.02 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.02 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.02 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.02 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.05 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.05 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.05 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.05 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.05 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.05 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.05 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.05 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.05 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.05 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=8 eta=0.02 seed=42 proj=True sigma=0.05 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=8 eta=0.02 seed=42 proj=False sigma=0.05 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.0 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.0 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.0 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.0 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.0 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.0 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.0 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.0 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.0 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.0 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.0 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.0 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.005 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.005 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.005 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.005 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.005 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.005 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.005 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.005 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.005 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.005 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.005 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.005 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.01 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.01 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.01 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.01 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.01 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.01 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.01 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.01 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.01 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.01 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.01 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.01 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.02 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.02 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.02 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.02 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.02 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.02 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.02 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.02 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.02 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.02 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.02 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.02 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.05 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.05 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.05 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.05 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.05 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.05 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.05 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.05 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.05 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.05 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=7 proj=True sigma=0.05 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=7 proj=False sigma=0.05 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.0 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.0 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.0 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.0 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.0 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.0 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.0 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.0 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.0 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.0 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.0 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.0 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.005 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.005 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.005 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.005 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.005 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.005 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.005 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.005 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.005 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.005 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.005 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.005 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.01 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.01 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.01 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.01 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.01 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.01 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.01 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.01 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.01 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.01 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.01 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.01 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.02 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.02 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.02 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.02 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.02 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.02 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.02 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.02 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.02 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.02 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.02 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.02 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.05 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.05 drop=0.0 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.05 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.05 drop=0.0 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.05 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.05 drop=0.002 return=0.0 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.05 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.05 drop=0.002 return=0.0 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.05 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.05 drop=0.002 return=0.002 drive=0.0
+Run N=24 d=16 eta=0.02 seed=42 proj=True sigma=0.05 drop=0.002 return=0.002 drive=0.01
+Run N=24 d=16 eta=0.02 seed=42 proj=False sigma=0.05 drop=0.002 return=0.002 drive=0.01
+Saved noise_open_system_results.csv
+
+toy_inverse_identifiability.py
+struct=clustered spread=0.05 obs=1.0 noise=0.0 seed=1
+struct=clustered spread=0.05 obs=1.0 noise=0.0 seed=7
+struct=clustered spread=0.05 obs=1.0 noise=0.0 seed=42
+struct=clustered spread=0.05 obs=1.0 noise=0.01 seed=1
+struct=clustered spread=0.05 obs=1.0 noise=0.01 seed=7
+struct=clustered spread=0.05 obs=1.0 noise=0.01 seed=42
+struct=clustered spread=0.05 obs=1.0 noise=0.05 seed=1
+struct=clustered spread=0.05 obs=1.0 noise=0.05 seed=7
+struct=clustered spread=0.05 obs=1.0 noise=0.05 seed=42
+struct=clustered spread=0.05 obs=0.5 noise=0.0 seed=1
+struct=clustered spread=0.05 obs=0.5 noise=0.0 seed=7
+struct=clustered spread=0.05 obs=0.5 noise=0.0 seed=42
+struct=clustered spread=0.05 obs=0.5 noise=0.01 seed=1
+struct=clustered spread=0.05 obs=0.5 noise=0.01 seed=7
+struct=clustered spread=0.05 obs=0.5 noise=0.01 seed=42
+struct=clustered spread=0.05 obs=0.5 noise=0.05 seed=1
+struct=clustered spread=0.05 obs=0.5 noise=0.05 seed=7
+struct=clustered spread=0.05 obs=0.5 noise=0.05 seed=42
+struct=clustered spread=0.05 obs=0.25 noise=0.0 seed=1
+struct=clustered spread=0.05 obs=0.25 noise=0.0 seed=7
+struct=clustered spread=0.05 obs=0.25 noise=0.0 seed=42
+struct=clustered spread=0.05 obs=0.25 noise=0.01 seed=1
+struct=clustered spread=0.05 obs=0.25 noise=0.01 seed=7
+struct=clustered spread=0.05 obs=0.25 noise=0.01 seed=42
+struct=clustered spread=0.05 obs=0.25 noise=0.05 seed=1
+struct=clustered spread=0.05 obs=0.25 noise=0.05 seed=7
+struct=clustered spread=0.05 obs=0.25 noise=0.05 seed=42
+struct=clustered spread=0.1 obs=1.0 noise=0.0 seed=1
+struct=clustered spread=0.1 obs=1.0 noise=0.0 seed=7
+struct=clustered spread=0.1 obs=1.0 noise=0.0 seed=42
+struct=clustered spread=0.1 obs=1.0 noise=0.01 seed=1
+struct=clustered spread=0.1 obs=1.0 noise=0.01 seed=7
+struct=clustered spread=0.1 obs=1.0 noise=0.01 seed=42
+struct=clustered spread=0.1 obs=1.0 noise=0.05 seed=1
+struct=clustered spread=0.1 obs=1.0 noise=0.05 seed=7
+struct=clustered spread=0.1 obs=1.0 noise=0.05 seed=42
+struct=clustered spread=0.1 obs=0.5 noise=0.0 seed=1
+struct=clustered spread=0.1 obs=0.5 noise=0.0 seed=7
+struct=clustered spread=0.1 obs=0.5 noise=0.0 seed=42
+struct=clustered spread=0.1 obs=0.5 noise=0.01 seed=1
+struct=clustered spread=0.1 obs=0.5 noise=0.01 seed=7
+struct=clustered spread=0.1 obs=0.5 noise=0.01 seed=42
+struct=clustered spread=0.1 obs=0.5 noise=0.05 seed=1
+struct=clustered spread=0.1 obs=0.5 noise=0.05 seed=7
+struct=clustered spread=0.1 obs=0.5 noise=0.05 seed=42
+struct=clustered spread=0.1 obs=0.25 noise=0.0 seed=1
+struct=clustered spread=0.1 obs=0.25 noise=0.0 seed=7
+struct=clustered spread=0.1 obs=0.25 noise=0.0 seed=42
+struct=clustered spread=0.1 obs=0.25 noise=0.01 seed=1
+struct=clustered spread=0.1 obs=0.25 noise=0.01 seed=7
+struct=clustered spread=0.1 obs=0.25 noise=0.01 seed=42
+struct=clustered spread=0.1 obs=0.25 noise=0.05 seed=1
+struct=clustered spread=0.1 obs=0.25 noise=0.05 seed=7
+struct=clustered spread=0.1 obs=0.25 noise=0.05 seed=42
+struct=clustered spread=0.2 obs=1.0 noise=0.0 seed=1
+struct=clustered spread=0.2 obs=1.0 noise=0.0 seed=7
+struct=clustered spread=0.2 obs=1.0 noise=0.0 seed=42
+struct=clustered spread=0.2 obs=1.0 noise=0.01 seed=1
+struct=clustered spread=0.2 obs=1.0 noise=0.01 seed=7
+struct=clustered spread=0.2 obs=1.0 noise=0.01 seed=42
+struct=clustered spread=0.2 obs=1.0 noise=0.05 seed=1
+struct=clustered spread=0.2 obs=1.0 noise=0.05 seed=7
+struct=clustered spread=0.2 obs=1.0 noise=0.05 seed=42
+struct=clustered spread=0.2 obs=0.5 noise=0.0 seed=1
+struct=clustered spread=0.2 obs=0.5 noise=0.0 seed=7
+struct=clustered spread=0.2 obs=0.5 noise=0.0 seed=42
+struct=clustered spread=0.2 obs=0.5 noise=0.01 seed=1
+struct=clustered spread=0.2 obs=0.5 noise=0.01 seed=7
+struct=clustered spread=0.2 obs=0.5 noise=0.01 seed=42
+struct=clustered spread=0.2 obs=0.5 noise=0.05 seed=1
+struct=clustered spread=0.2 obs=0.5 noise=0.05 seed=7
+struct=clustered spread=0.2 obs=0.5 noise=0.05 seed=42
+struct=clustered spread=0.2 obs=0.25 noise=0.0 seed=1
+struct=clustered spread=0.2 obs=0.25 noise=0.0 seed=7
+struct=clustered spread=0.2 obs=0.25 noise=0.0 seed=42
+struct=clustered spread=0.2 obs=0.25 noise=0.01 seed=1
+struct=clustered spread=0.2 obs=0.25 noise=0.01 seed=7
+struct=clustered spread=0.2 obs=0.25 noise=0.01 seed=42
+struct=clustered spread=0.2 obs=0.25 noise=0.05 seed=1
+struct=clustered spread=0.2 obs=0.25 noise=0.05 seed=7
+struct=clustered spread=0.2 obs=0.25 noise=0.05 seed=42
+struct=null spread=0.05 obs=1.0 noise=0.0 seed=1
+struct=null spread=0.05 obs=1.0 noise=0.0 seed=7
+struct=null spread=0.05 obs=1.0 noise=0.0 seed=42
+struct=null spread=0.05 obs=1.0 noise=0.01 seed=1
+struct=null spread=0.05 obs=1.0 noise=0.01 seed=7
+struct=null spread=0.05 obs=1.0 noise=0.01 seed=42
+struct=null spread=0.05 obs=1.0 noise=0.05 seed=1
+struct=null spread=0.05 obs=1.0 noise=0.05 seed=7
+struct=null spread=0.05 obs=1.0 noise=0.05 seed=42
+struct=null spread=0.05 obs=0.5 noise=0.0 seed=1
+struct=null spread=0.05 obs=0.5 noise=0.0 seed=7
+struct=null spread=0.05 obs=0.5 noise=0.0 seed=42
+struct=null spread=0.05 obs=0.5 noise=0.01 seed=1
+struct=null spread=0.05 obs=0.5 noise=0.01 seed=7
+struct=null spread=0.05 obs=0.5 noise=0.01 seed=42
+struct=null spread=0.05 obs=0.5 noise=0.05 seed=1
+struct=null spread=0.05 obs=0.5 noise=0.05 seed=7
+struct=null spread=0.05 obs=0.5 noise=0.05 seed=42
+struct=null spread=0.05 obs=0.25 noise=0.0 seed=1
+struct=null spread=0.05 obs=0.25 noise=0.0 seed=7
+struct=null spread=0.05 obs=0.25 noise=0.0 seed=42
+struct=null spread=0.05 obs=0.25 noise=0.01 seed=1
+struct=null spread=0.05 obs=0.25 noise=0.01 seed=7
+struct=null spread=0.05 obs=0.25 noise=0.01 seed=42
+struct=null spread=0.05 obs=0.25 noise=0.05 seed=1
+struct=null spread=0.05 obs=0.25 noise=0.05 seed=7
+struct=null spread=0.05 obs=0.25 noise=0.05 seed=42
+struct=null spread=0.1 obs=1.0 noise=0.0 seed=1
+struct=null spread=0.1 obs=1.0 noise=0.0 seed=7
+struct=null spread=0.1 obs=1.0 noise=0.0 seed=42
+struct=null spread=0.1 obs=1.0 noise=0.01 seed=1
+struct=null spread=0.1 obs=1.0 noise=0.01 seed=7
+struct=null spread=0.1 obs=1.0 noise=0.01 seed=42
+struct=null spread=0.1 obs=1.0 noise=0.05 seed=1
+struct=null spread=0.1 obs=1.0 noise=0.05 seed=7
+struct=null spread=0.1 obs=1.0 noise=0.05 seed=42
+struct=null spread=0.1 obs=0.5 noise=0.0 seed=1
+struct=null spread=0.1 obs=0.5 noise=0.0 seed=7
+struct=null spread=0.1 obs=0.5 noise=0.0 seed=42
+struct=null spread=0.1 obs=0.5 noise=0.01 seed=1
+struct=null spread=0.1 obs=0.5 noise=0.01 seed=7
+struct=null spread=0.1 obs=0.5 noise=0.01 seed=42
+struct=null spread=0.1 obs=0.5 noise=0.05 seed=1
+struct=null spread=0.1 obs=0.5 noise=0.05 seed=7
+struct=null spread=0.1 obs=0.5 noise=0.05 seed=42
+struct=null spread=0.1 obs=0.25 noise=0.0 seed=1
+struct=null spread=0.1 obs=0.25 noise=0.0 seed=7
+struct=null spread=0.1 obs=0.25 noise=0.0 seed=42
+struct=null spread=0.1 obs=0.25 noise=0.01 seed=1
+struct=null spread=0.1 obs=0.25 noise=0.01 seed=7
+struct=null spread=0.1 obs=0.25 noise=0.01 seed=42
+struct=null spread=0.1 obs=0.25 noise=0.05 seed=1
+struct=null spread=0.1 obs=0.25 noise=0.05 seed=7
+struct=null spread=0.1 obs=0.25 noise=0.05 seed=42
+struct=null spread=0.2 obs=1.0 noise=0.0 seed=1
+struct=null spread=0.2 obs=1.0 noise=0.0 seed=7
+struct=null spread=0.2 obs=1.0 noise=0.0 seed=42
+struct=null spread=0.2 obs=1.0 noise=0.01 seed=1
+struct=null spread=0.2 obs=1.0 noise=0.01 seed=7
+struct=null spread=0.2 obs=1.0 noise=0.01 seed=42
+struct=null spread=0.2 obs=1.0 noise=0.05 seed=1
+struct=null spread=0.2 obs=1.0 noise=0.05 seed=7
+struct=null spread=0.2 obs=1.0 noise=0.05 seed=42
+struct=null spread=0.2 obs=0.5 noise=0.0 seed=1
+struct=null spread=0.2 obs=0.5 noise=0.0 seed=7
+struct=null spread=0.2 obs=0.5 noise=0.0 seed=42
+struct=null spread=0.2 obs=0.5 noise=0.01 seed=1
+struct=null spread=0.2 obs=0.5 noise=0.01 seed=7
+struct=null spread=0.2 obs=0.5 noise=0.01 seed=42
+struct=null spread=0.2 obs=0.5 noise=0.05 seed=1
+struct=null spread=0.2 obs=0.5 noise=0.05 seed=7
+struct=null spread=0.2 obs=0.5 noise=0.05 seed=42
+struct=null spread=0.2 obs=0.25 noise=0.0 seed=1
+struct=null spread=0.2 obs=0.25 noise=0.0 seed=7
+struct=null spread=0.2 obs=0.25 noise=0.0 seed=42
+struct=null spread=0.2 obs=0.25 noise=0.01 seed=1
+struct=null spread=0.2 obs=0.25 noise=0.01 seed=7
+struct=null spread=0.2 obs=0.25 noise=0.01 seed=42
+struct=null spread=0.2 obs=0.25 noise=0.05 seed=1
+struct=null spread=0.2 obs=0.25 noise=0.05 seed=7
+struct=null spread=0.2 obs=0.25 noise=0.05 seed=42
+Saved inverse_identifiability_results.csv
