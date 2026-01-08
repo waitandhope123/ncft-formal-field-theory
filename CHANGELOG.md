@@ -5,6 +5,31 @@ Versioning reflects increasing formal rigor, axiomatic clarity, and code–math 
 
 ---
 
+## v5.2a.4 — Mathematical Core Productionized
+
+**Status:** GitHub live, Rxiverse-ready
+
+### Added
+- **AXIOMS.md** - Complete 4 axiom formal spec
+- Purity invariant γ = [|A| + 2∑_{i < j} C_ij] / |A|^2
+- Full projected dynamics specification
+
+### Fixed
+- All LaTeX brace errors throughout
+- Perfect GitHub/Overleaf rendering
+
+### Validated
+- Spectral gap ✓ Jacobian inside unit circle
+- Finite correlation length ✓ ξ ≪ system size
+- Purity error < 10^{-10} ✓
+- Pure pairwise closure ✓
+
+### Productionized
+- 100% axiom-code isomorphism across 20+ toys
+- Rxiverse paper submission ready
+
+---
+
 ## v5.2a.3 — Results-Aligned Release (2026-01-06)
 
 **Status:** Public release
