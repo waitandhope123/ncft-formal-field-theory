@@ -98,7 +98,7 @@ $$
 Define the total interaction strength:
 
 $$
-\mathcal{C}(\{f_i\}) := \sum_{\substack{i<j\\ i,j\in\mathcal{A}}} C_{ij}.
+\mathcal{C}(\{f_i\}) := \sum_{\substack{i < j \\ i,j\in\mathcal{A}}} C_{ij}.
 $$
 
 No higher-order interaction terms are included.
@@ -123,13 +123,13 @@ $$
 For unit-normalized states:
 
 $$
-\gamma = \frac{|\mathcal{A}| + 2\sum_{i<j} C_{ij}}{|\mathcal{A}|^2}.
+\gamma = \frac{|\mathcal{A}| + 2\sum_{i < j} C_{ij}}{|\mathcal{A}|^2}.
 $$
 
 Define the numerical purity error:
 
 $$
-\varepsilon_{\mathrm{pur}} := \left| \mathrm{Tr}(\rho^2) - \frac{|\mathcal{A}| + 2\sum_{i<j} C_{ij}}{|\mathcal{A}|^2} \right|.
+\varepsilon_{\mathrm{pur}} := \left| \mathrm{Tr}(\rho^2) - \frac{|\mathcal{A}| + 2\sum_{i < j} C_{ij}}{|\mathcal{A}|^2} \right|.
 $$
 
 ## Dynamics (Validated Realizations)
