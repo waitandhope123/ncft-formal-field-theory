@@ -69,7 +69,7 @@ This defines the coherent phase where stable NCFT dynamics exist. Decohered regi
 Total interaction strength:
 
 $$
-F(\{\psi_k\}) = \sum_{i<j} C_{ij}.
+F(\{\psi_k\}) = \sum_{i < j} C_{ij}.
 $$
 
 No higher-order terms appear at the fundamental level.
