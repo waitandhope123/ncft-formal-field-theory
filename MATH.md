@@ -139,7 +139,7 @@ a unique microscopic update law.
 Validated dynamics take the projected-flow form:
 
 $$
-\psi_i^{(t+1)} = \mathcal{P}\!\left( \psi_i^{(t)} - \eta\,\nabla_{\psi_i}\mathcal{E}(\{\psi_k^{(t)}\}) \right),
+\psi_i^{(t+1)} = \mathcal{P}\left( \psi_i^{(t)} - \eta\,\nabla_{\psi_i}\mathcal{E}(\{\psi_k^{(t)}\}) \right),
 $$
 
 where $\eta>0$ is a step size and:
