@@ -12,6 +12,7 @@
   - Spirit channeling: **f=0.98** (6 events)
   - Healing: **f=0.90** (4 events)
 - ✅ **Distance/shielding independence** proven
+- ✅**Spectral gap plot:** ![Toy 11 Jacobian spectrum]
 
 ## Quick Start
 ```bash
