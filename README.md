@@ -1,128 +1,35 @@
-# NCFT — Non-Local Consciousness Field Theory
+# ABSTRACT
 
-**A formal mathematical field theory in which three axioms plus a closure condition
-define 44 interaction predictions, validated through executable toy models.**
+Non-Local Consciousness Field Theory (NCFT) is a formally defined interaction
+field framework characterized by a minimal axiomatic core, enforced projection
+dynamics, and pure pairwise closure. Interacting entities are modeled as
+unit-normalized fields coupled exclusively through bounded bilinear overlap,
+with collective behavior constrained by explicit coherence conditions.
 
-[![Validation Status](https://img.shields.io/badge/validation-results--aligned-passing.svg)](https://github.com/waitandhope123/ncft-formal-field-theory)
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+Within its declared scope, NCFT exhibits bounded, deterministic, and internally
+consistent dynamics. Extensive computational validation demonstrates that
+coherent NCFT regimes are dynamically gapped, strongly stable, and free of
+marginal or chaotic behavior. Perturbations decay on finite timescales, and
+no critical slowing-down, glassy dynamics, or long-range instability is
+observed.
 
----
+When interactions are restricted to local graphs, NCFT supports only
+short-range collective behavior characterized by a finite correlation length.
+This correlation length increases smoothly with coupling strength but saturates
+well below system size, excluding emergent criticality or scale-free transport.
+Under stochastic noise and external drive, NCFT admits stable non-equilibrium
+steady states with broadband, noise-dominated fluctuation spectra.
 
-## Overview
+NCFT behaves as an effective, scale-dependent theory rather than a
+renormalization-invariant one. Under coarse-graining, aggregated micro-level
+dynamics approximately track independently evolved macro-level systems, with
+bounded, non-accumulating error. The theory defines a restricted universality
+class: a finite family of projection-enforced, approximately bilinear
+interaction laws that converge to a common late-time structure.
 
-NCFT (Non-Local Consciousness Field Theory) is a compact axiomatic framework that models
-consciousness interactions using normalized field states and bilinear coupling.
-
-All validated behavior is derived from explicit axioms and closure rules, and confirmed
-through numerical toy models. Claims are restricted to demonstrated results.
-
-- **Fundamental axioms:** 3  
-- **Closure conditions:** 1  
-- **Interaction predictions:** 44  
-- **Validation method:** Computational toy models  
-
----
-
-## Core Mathematical System
-
-### Primitive Object
-
-```text
-ConsciousnessField(
-  id: str,
-  frequency: float,
-  state: ℂⁿ
-)
-```
-
-All states are unit-normalized:
-\[
-\|\psi\| = 1
-\]
-
----
-
-### Axiomatic Structure
-
-1. **Universal Exclusion**  
-\[
-C(f_i, f_i) = 0 \quad \forall i
-\]
-
-2. **Bounded Bilinear Coupling**  
-\[
-0 \le C(f_1, f_2) \le 1 \quad \forall f_1 \ne f_2
-\]
-
-3. **Frequency Coherence (Coherent Regimes)**  
-\[
-\sigma(f_{\text{active}}) < 0.1
-\]
-
-**Closure Condition — Pure Pairwise Summation**  
-\[
-C(\{f_n\}) = \sum_{i<j} C(f_i, f_j)
-\]
-
----
-
-### Coupling Definition
-
-\[
-C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2
-\]
-
-with all states normalized.
-
----
-
-## Interaction Predictions (Validated)
-
-| Category              | Events | Status |
-|-----------------------|--------|--------|
-| Semantic transfer     | 22     | ✅ |
-| Self-exclusion        | 10     | ✅ |
-| Healing overlap       | 4      | ✅ |
-| High-fidelity coupling| 6      | ✅ |
-| Third-party mediation | 5      | ✅ |
-| Distance independence | 1      | ✅ |
-| Shielding robustness  | 1      | ✅ |
-
-**Total:** **44 interaction predictions numerically validated**
-
----
-
-## Formal Properties
-
-- State normalization enforced (`‖ψ‖ = 1`)
-- Couplings strictly bounded in `[0,1]`
-- Pairwise indexing (`i < j`) prevents double counting
-- Closure ensures finite, well-defined multi-field interactions
-- Stable, deterministic behavior observed within coherent regimes
-
----
-
-## Example Interaction Structure
-
-```text
-ConsciousnessField("user") ⟂ ConsciousnessField("user")
-
-C("user","other") =
-|⟨ψ_user | ψ_other⟩|²
-
-C({f1, f2, f3}) =
-C(f1, f2) + C(f1, f3) + C(f2, f3)
-```
-
----
-
-## Citation
-
-```bibtex
-@misc{ncft2026,
-  author       = {Sam DeRenzis},
-  title        = {NCFT v5.2a.3 — Non-Local Consciousness Field Theory},
-  year         = {2026},
-  publisher    = {GitHub}
-}
-```
+All claims are restricted strictly to projection-enforced, coherent-phase
+dynamics that survive exhaustive computational stress testing. NCFT does not
+claim generic universality, critical behavior, long-range coherence, or complete
+inverse identifiability. Its value lies in the precise characterization of
+interaction structure, stability, invariants, and epistemic limits within its
+stated scope.
