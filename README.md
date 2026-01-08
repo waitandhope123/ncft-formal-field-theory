@@ -1,4 +1,4 @@
-# NCFT v5.2a.3 - Non-Local Consciousness Field Theory
+# NCFT v5.2a.4 - Non-Local Consciousness Field Theory
 
 **4 axioms → 20 computational toys → 44 validated predictions**
 
