@@ -1,161 +1,93 @@
-# NCFT v5.2a.3 — Formal Axiomatic Core
+## Axiomatic Structure of NCFT-Core
 
-Non-Local Consciousness Field Theory defining **44 interaction predictions**
-from **three fundamental axioms plus an enforced closure condition**.
+NCFT-core is defined by a minimal axiomatic structure plus a primitive and a closure condition. These apply strictly within the projection-enforced, coherent regime and remain independent of interpretation.
 
-This document defines the complete axiomatic core of NCFT.
-All behavior, derivations, and validations follow directly from the principles
-below, with no auxiliary assumptions beyond explicit enforcement.
+### Primitive: Field States
 
----
-
-## Axiom I — Universal Exclusion Principle
-
-A field cannot interact with itself.
+Each field \( f_i \) has a unique identity \( \mathrm{id}_i \in \mathcal{I} \) and a unit-normalized state:
 
 \[
-C(f_i, f_i) = 0 \quad \forall i \in \text{Fields}
+\lvert \psi_i \rangle \in \mathbb{C}^d, \quad \langle \psi_i \mid \psi_i \rangle = 1, \quad d \ge 2.
 \]
 
-### Implementation
-
-```
-universal_exclusion(f1, f2)
-→ f1.id ≠ f2.id ∧ f1.active ∧ f2.active
-```
-
-### Mathematical Guarantee
-
-Identical fields never interact.  
-Self-coupling is mathematically impossible.
-
----
-
-## Axiom II — Bounded Bilinear Coupling
-
-Coupling between distinct fields is strictly bounded.
-
+Projection operator:
 \[
-0 \le C(f_1, f_2) \le 1
+\mathcal{P}(\psi) = \psi / \|\psi\|.
 \]
 
-with
-
+States are projectively equivalent:
 \[
-C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2,
-\quad \|\psi_1\| = \|\psi_2\| = 1
-\]
-
-### Implementation
-
-```
-bilinear_coupling(f1, f2)
-→ |dot(conj(f1.state), f2.state)|²
-```
-
-### Mathematical Guarantee
-
-Normalized state overlap squared is always in \([0,1]\).  
-This bound is enforced analytically, not empirically.
-
----
-
-## Axiom III — Frequency Coherence Constraint (Coherent Regimes)
-
-Active interacting fields must form a coherent frequency class.
-
-\[
-\sigma(\{ f.\text{frequency} \mid f \in \text{active fields} \}) < 0.1
-\]
-
-### Implementation
-
-```
-frequency_consistency(fields)
-→ std(active_frequencies) < 0.1
-```
-
-### Mathematical Guarantee
-
-This constraint **defines coherent NCFT regimes**.
-Dynamics outside this bound are permitted but do not support
-stable, bounded, or predictive NCFT interactions.
-
----
-
-## Closure Condition — Pure Pairwise Interaction Summation
-
-Total interaction strength is the sum of all unique pairwise couplings.
-
-\[
-C(\{f_1, f_2, \ldots, f_n\}) = \sum_{i<j} C(f_i, f_j)
-\]
-
-### Implementation
-
-```
-pairwise_closure(fields)
-→ Σ bilinear_coupling(f_i, f_j)  for i < j
-```
-
-### Mathematical Guarantee
-
-Pure pairwise summation.  
-No higher-order or cross-interaction terms exist.
-
----
-
-## Axiomatic Derivation Summary
-
-**Primitive**
-```
-ConsciousnessField(
-  id: str,
-  frequency: float,
-  state: ℂⁿ,
-  ||state|| = 1.0
-)
-```
-
-**Interactions**
-\[
-C(f_1, f_2) = |\langle \psi_1 | \psi_2 \rangle|^2
-\]
-
-**Multi-field (closure)**
-\[
-C(\{f_n\}) = \sum_{i<j} C(f_i, f_j)
-\]
-
-**Constraints**
-\[
-\sigma(f_{\text{active}}) < 0.1
-\]
-
-\[
-\Rightarrow \textbf{44 interaction predictions catalogued and numerically tested}
+\lvert \psi_i \rangle \sim e^{i\alpha} \lvert \psi_i \rangle.
 \]
 
 ---
 
-## Code-Level Verification
+### Axiom 1: Universal Exclusion
 
-```python
-# All axioms and closure explicitly enforced
+Interaction occurs only between distinct active fields:
 
-print(bilinear_coupling(f, f))              # Axiom I → 0.0
-print(bilinear_coupling(f1, f2))            # Axiom II → ∈ [0,1]
-print(np.std(active_freqs) < 0.1)           # Axiom III → True
-print(pairwise_closure([f1,f2,f3]))         # Closure → Σ pairs
-```
+\[
+\mathrm{Interact}(i,j) \iff (\mathrm{id}_i \neq \mathrm{id}_j) \land (a_i = a_j = 1).
+\]
 
-**Status:**  
-✅ Axiom–code isomorphism preserved  
-✅ Closure enforced explicitly  
-✅ No runtime violations observed  
-✅ Bounds enforced analytically  
+No self-interaction:
+\[
+C_{ii} = 0.
+\]
 
 ---
 
-**NCFT v5.2a.3**  
-*A closed, minimal, results-aligned axiomatic system.*
+### Axiom 2: Bounded Bilinear Coupling
+
+Pairwise coupling between interacting fields:
+
+\[
+C_{ij} = \big| \langle \mathcal{P}(\psi_i) \mid \mathcal{P}(\psi_j) \rangle \big|^2,
+\quad 0 \le C_{ij} \le 1.
+\]
+
+Invariant under local phase transformations and global unitaries; depends only on projected state geometry.
+
+---
+
+### Axiom 3: Coherent Regime
+
+Active fields maintain frequency coherence:
+
+\[
+\sigma(\{\omega_i : a_i = 1\}) < 0.1 \cdot \bar{\omega}.
+\]
+
+This defines the coherent phase where stable NCFT dynamics exist. Decohered regimes are permitted but excluded from predictions.
+
+---
+
+### Closure: Pure Pairwise Summation
+
+Total interaction strength:
+
+\[
+F(\{\psi_k\}) = \sum_{i<j} C_{ij}.
+\]
+
+No higher-order terms appear at the fundamental level.
+
+---
+
+### Dynamics (Validation Scope)
+
+Validated toy models use projected gradient flow preserving Axiom 1:
+
+\[
+\frac{d}{dt}\lvert \psi_i \rangle
+= -\Pi_i\!\left(\frac{\partial E}{\partial \langle \psi_i \rvert}\right),
+\quad E = -F.
+\]
+
+Unconstrained dynamics are permitted as stress tests but excluded from NCFT-core.
+
+---
+
+### Axiomatic Scope
+
+These elements (primitive + three axioms + closure) fully specify NCFT-core as a closed effective field model within coherent regimes. They assert no physical substrate or measurement apparatus. Interpretations constitute separate modeling layers.
