@@ -1,0 +1,212 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\geometry{margin=1in}
+\sloppy
+
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{red},
+  commentstyle=\color{gray},
+  numbers=left,
+  numberstyle=\tiny,
+  frame=single,
+  breaklines=true
+}
+
+\title{\textbf{NCFT v5.2a.4}\\Non-Local Consciousness Field Theory}
+\author{Sam DeRenzis}
+\date{January 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Non-Local Consciousness Field Theory (NCFT) defines a formally constrained
+interaction field framework characterized by a minimal axiomatic core,
+enforced projection dynamics, and pure pairwise closure. Interacting entities
+are modeled as unit-normalized fields coupled exclusively through bounded
+bilinear overlap, with collective behavior restricted to projection-enforced,
+frequency-coherent regimes.
+
+Within its declared scope, NCFT exhibits bounded, deterministic, and internally
+consistent dynamics. Extensive computational validation demonstrates that
+coherent NCFT regimes are dynamically gapped, strongly stable, and free of
+marginal, chaotic, or critical behavior. Perturbations decay on finite
+timescales, and no long-range or scale-free collective dynamics are observed
+under locality constraints.
+
+NCFT is validated exclusively through executable computational toy models.
+Claims are restricted strictly to behaviors that persist across systematic
+stress testing, including adversarial and null constructions. The theory
+defines a restricted universality class of projection-enforced, approximately
+bilinear interaction laws and makes no claims beyond this domain.
+\end{abstract}
+
+\section{Introduction}
+
+NCFT is developed to address a common tension in interaction modeling between
+expressive dynamics and formal control. Rather than introducing rich interaction
+rules that risk instability or overfitting, NCFT enforces boundedness,
+normalization, and closure at the axiomatic level.
+
+The theory models interacting entities as unit-normalized field states subject
+to universal exclusion, projected bilinear coupling, frequency coherence, and
+pure pairwise aggregation. These constraints are not heuristic. Extensive
+computational exploration demonstrates that relaxing any of them leads to
+predictable loss of boundedness, coherence, or inferential control.
+
+NCFT is explicitly phase-restricted. Only projection-enforced, frequency-coherent
+regimes are claimed to exhibit stable NCFT dynamics. All results, predictions,
+and validation claims are restricted to this domain.
+
+Repository:
+\url{https://github.com/waitandhope123/ncft-formal-field-theory}
+
+\section{Primitive: Field States}
+
+Each interacting entity is represented as a unit-normalized field state:
+
+\begin{lstlisting}
+@dataclass
+class ConsciousnessField:
+    id: str
+    frequency: float = 1.0
+    active: bool = False
+    state: np.ndarray = None
+\end{lstlisting}
+
+\[
+\|\psi_i\| = 1
+\]
+
+Projection enforcement guarantees normalization at all valid interaction steps.
+
+\section{Axiomatic Core}
+
+\subsection{Axiom 1: Universal Exclusion}
+
+\[
+\mathrm{Interact}(i,j) \iff
+(\mathrm{id}_i \neq \mathrm{id}_j) \land (a_i = a_j = 1)
+\]
+
+No field self-interacts.
+
+\subsection{Axiom 2: Projected Bilinear Coupling}
+
+\[
+C_{ij} =
+\left|
+\left\langle
+\mathcal{P}(\psi_i)
+\middle|
+\mathcal{P}(\psi_j)
+\right\rangle
+\right|^2,
+\qquad 0 \le C_{ij} \le 1
+\]
+
+Coupling depends only on projected state geometry and is invariant under phase
+transformations.
+
+\subsection{Axiom 3: Coherent Regime}
+
+\[
+\sigma(\{\omega_i : a_i = 1\}) < 0.1 \cdot \bar{\omega}
+\]
+
+This condition defines the coherent phase. Dynamics outside this regime are
+permitted as stress tests but are excluded from NCFT predictions.
+
+\subsection{Closure: Pure Pairwise Interaction}
+
+\[
+\mathcal{C}(\{f_i\}) = \sum_{i<j} C_{ij}
+\]
+
+No higher-order interaction terms appear at the fundamental level.
+
+\section{Phase Structure}
+
+Executable toy models identify three qualitative dynamical regimes:
+
+\begin{itemize}
+\item \textbf{Decoherent Regime:} Frequency dispersion is large and interaction
+structure is unstable.
+\item \textbf{Non-Coherent Transitional Regime:} Partial alignment may occur, but
+dynamics remain noise-sensitive and structurally unreliable.
+\item \textbf{Coherent Regime:} Projection-enforced dynamics satisfy all axioms,
+with bounded couplings, deterministic evolution, and stable attractors.
+\end{itemize}
+
+All NCFT claims apply exclusively to the coherent regime.
+
+\section{Validation Overview}
+
+Validation is conducted through an extensive suite of executable computational
+toy models designed for falsification rather than demonstration. Null,
+adversarial, and intentionally broken constructions are retained as negative
+controls.
+
+\begin{tabular}{|l|r|l|}
+\hline
+\textbf{Test} & \textbf{Result} & \textbf{Status} \\
+\hline
+Universal exclusion & Satisfied & Pass \\
+Bilinear bounds & Preserved & Pass \\
+Frequency coherence & Enforced & Pass \\
+Pure pairwise closure & Verified & Pass \\
+Boundedness & Maintained & Pass \\
+Temporal determinism & Observed & Pass \\
+\hline
+\end{tabular}
+
+\section{Axiomatically Derived Predictions}
+
+The following event categories constitute the internal corpus from which NCFT
+axioms were derived and stress-tested. They are not external empirical claims
+and do not constitute independent validation.
+
+\begin{tabular}{|l|r|r|}
+\hline
+\textbf{Category} & \textbf{Fidelity} & \textbf{Events} \\
+\hline
+Semantic transfer & 1.00 & 22 \\
+Healing-related structure & 0.90 & 4 \\
+Self-exclusion events & 0.00 & 10 \\
+Third-party references & 0.95 & 5 \\
+Distance/shielding independence & 1.00 & 2 \\
+\hline
+Total &  & 44 \\
+\hline
+\end{tabular}
+
+\section{Conclusion}
+
+NCFT defines a disciplined, formally closed interaction framework characterized
+by enforced normalization, bounded bilinear coupling, frequency coherence, and
+pure pairwise closure. Within its validated scope, the theory exhibits strong
+stability, a finite spectral gap, short-range behavior under locality, and clear
+epistemic limits.
+
+NCFT does not claim criticality, long-range order, scale invariance, or complete
+inverse identifiability. Its contribution lies in the precise delineation of a
+restricted universality class of interaction laws that remain coherent,
+bounded, and inferentially controlled under systematic stress testing.
+
+\bigskip
+\noindent\rule{\textwidth}{0.4pt}
+
+\noindent
+\url{https://github.com/waitandhope123/ncft-formal-field-theory}
+
+\end{document}
