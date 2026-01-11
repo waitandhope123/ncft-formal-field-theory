@@ -16,17 +16,20 @@ $d$.
 
 **Identity Space.**  
 The identity space is finite:
+
 $$
 \mathcal{I} := \{1,2,\dots,M\}, \qquad M \gg N,
 $$
+
 ensuring universal exclusion without identity exhaustion.
 
 **Admissible State Space.**  
 The NCFT-core state space is the unit-norm manifold:
+
 $$
-\mathcal{S}_N := \prod_{i=1}^N
-\left(\mathbb{S}^{2d-1} \times \mathbb{R} \times \{0,1\} \times \mathcal{I}\right),
+\mathcal{S}_N := \prod_{i=1}^N \left(\mathbb{S}^{2d-1} \times \mathbb{R} \times \{0,1\} \times \mathcal{I}\right),
 $$
+
 where $\mathbb{S}^{2d-1} \subset \mathbb{C}^d$ denotes the unit sphere.
 
 ---
@@ -34,13 +37,13 @@ where $\mathbb{S}^{2d-1} \subset \mathbb{C}^d$ denotes the unit sphere.
 ## Projection Operator (Constitutive)
 
 Define the projection operator
+
 $$
-\mathcal{P}:\mathbb{C}^d\setminus\{0\}\to\mathbb{C}^d,
-\qquad
 \mathcal{P}(\psi) := \frac{\psi}{\|\psi\|}.
 $$
 
 For all admissible states:
+
 $$
 \|\mathcal{P}(\psi)\| = 1.
 $$
@@ -50,6 +53,7 @@ projective unit-norm manifold. Unprojected or partially projected dynamics are
 ill-posed and do not constitute NCFT-core dynamics.
 
 States are projectively equivalent:
+
 $$
 \lvert \psi_i \rangle \sim e^{i\alpha} \lvert \psi_i \rangle.
 $$
@@ -61,11 +65,13 @@ $$
 ### Axiom 1: Universal Exclusion
 
 Interaction is defined only between distinct active identities:
+
 $$
 \mathrm{Interact}(i,j) \iff (a_i=a_j=1)\ \land\ (\mathrm{id}_i \neq \mathrm{id}_j).
 $$
 
 Self-interaction is excluded:
+
 $$
 C_{ii} := 0.
 $$
@@ -75,13 +81,13 @@ $$
 ### Axiom 2: Projected Bilinear Coupling
 
 For any interacting pair $(i,j)$, define the coupling:
+
 $$
-C_{ij} := \left|\left\langle
-\mathcal{P}(\psi_i)\middle|\mathcal{P}(\psi_j)
-\right\rangle\right|^2.
+C_{ij} := \left|\left\langle \mathcal{P}(\psi_i)\middle|\mathcal{P}(\psi_j)\right\rangle\right|^2.
 $$
 
 Then:
+
 $$
 0 \le C_{ij} \le 1.
 $$
@@ -94,10 +100,9 @@ phase transformations and global unitary rotations.
 ### Closure Condition: Pure Pairwise Interaction
 
 Define the total interaction strength:
+
 $$
-\mathcal{C}(\{f_i\}) := \sum_{\substack{i < j \\ i,j\in\mathcal{A}}} C_{ij},
-\qquad
-\mathcal{A} := \{i : a_i=1\}.
+\mathcal{C}(\{f_i\}) := \sum_{\substack{i < j \\ i,j\in\mathcal{A}}} C_{ij}, \qquad \mathcal{A} := \{i : a_i=1\}.
 $$
 
 No higher-order interaction terms appear at the fundamental level.
@@ -118,27 +123,28 @@ conditions for NCFT-core dynamics.
 ### Density Matrix and Purity
 
 Define the empirical density matrix:
+
 $$
-\rho := \frac{1}{|\mathcal{A}|}
-\sum_{i\in\mathcal{A}} |\psi_i\rangle\langle\psi_i|.
+\rho := \frac{1}{|\mathcal{A}|} \sum_{i\in\mathcal{A}} |\psi_i\rangle\langle\psi_i|.
 $$
 
 Its purity is:
+
 $$
 \gamma := \mathrm{Tr}(\rho^2).
 $$
 
 **Purity Identity.**  
 For unit-normalized states:
+
 $$
 \gamma = \frac{|\mathcal{A}| + 2\sum_{i < j} C_{ij}}{|\mathcal{A}|^2}.
 $$
 
 Define numerical purity error:
+
 $$
-\varepsilon_{\mathrm{pur}} :=
-\left| \mathrm{Tr}(\rho^2) -
-\frac{|\mathcal{A}| + 2\sum_{i < j} C_{ij}}{|\mathcal{A}|^2} \right|.
+\varepsilon_{\mathrm{pur}} := \left| \mathrm{Tr}(\rho^2) - \frac{|\mathcal{A}| + 2\sum_{i < j} C_{ij}}{|\mathcal{A}|^2} \right|.
 $$
 
 ---
@@ -147,16 +153,15 @@ $$
 
 NCFT-core constrains admissible interaction states but does not require a unique
 microscopic update law. Validated realizations take the projected-flow form:
+
 $$
-\psi_i^{(t+1)} =
-\mathcal{P}\!\left(
-\psi_i^{(t)} - \eta\,\nabla_{\psi_i}\mathcal{E}(\{\psi_k^{(t)}\})
-\right),
+\psi_i^{(t+1)} := \mathcal{P}\!\left( \psi_i^{(t)} - \eta\,\nabla_{\psi_i}\mathcal{E}(\{\psi_k^{(t)}\}) \right),
 $$
+
 with step size $\eta>0$ and energy functional:
+
 $$
-\mathcal{E}(\{\psi_k\}) := -\sum_{i<j}
-\left|\langle \psi_i \mid \psi_j \rangle\right|^2.
+\mathcal{E}(\{\psi_k\}) := -\sum_{i<j} \left|\langle \psi_i \mid \psi_j \rangle\right|^2.
 $$
 
 Step-size bounds (e.g. $\eta<1$) are sufficient conditions used for analytical
