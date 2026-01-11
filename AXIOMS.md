@@ -1,16 +1,24 @@
 ## Axiomatic Structure of NCFT-Core
 
-NCFT-core is defined by a minimal axiomatic structure plus a primitive and a closure condition. These apply strictly within the projection-enforced, coherent regime and remain independent of interpretation.
+NCFT-core is defined by a minimal axiomatic structure together with a primitive
+and a closure condition. These elements jointly define a closed interaction
+framework on a restricted state space. All axioms are structural and apply
+independently of interpretation.
+
+---
 
 ### Primitive: Field States
 
-Each field \( f_i \) has a unique identity \( \mathrm{id}_i \in \mathcal{I} \) and a unit-normalized state:
+Each field \( f_i \) has a unique identity \( \mathrm{id}_i \in \mathcal{I} \) and
+a unit-normalized state:
 
 $$
-\lvert \psi_i \rangle \in \mathbb{C}^d, \quad \langle \psi_i \mid \psi_i \rangle = 1, \quad d \ge 2.
+\lvert \psi_i \rangle \in \mathbb{C}^d, \quad
+\langle \psi_i \mid \psi_i \rangle = 1, \quad d \ge 2.
 $$
 
-Projection operator:
+The admissible state space of NCFT-core is the unit-norm manifold. Projection is
+constitutive and defines the theory:
 
 $$
 \mathcal{P}(\psi) = \psi / \|\psi\|.
@@ -22,6 +30,9 @@ $$
 \lvert \psi_i \rangle \sim e^{i\alpha} \lvert \psi_i \rangle.
 $$
 
+Dynamics are defined only on this projective manifold. Unprojected or partially
+projected states are ill-posed and do not constitute NCFT-core dynamics.
+
 ---
 
 ### Axiom 1: Universal Exclusion
@@ -29,10 +40,11 @@ $$
 Interaction occurs only between distinct active fields:
 
 $$
-\mathrm{Interact}(i,j) \iff (\mathrm{id}_i \neq \mathrm{id}_j) \land (a_i = a_j = 1).
+\mathrm{Interact}(i,j) \iff
+(\mathrm{id}_i \neq \mathrm{id}_j) \land (a_i = a_j = 1).
 $$
 
-No self-interaction:
+No field self-interacts:
 
 $$
 C_{ii} = 0.
@@ -40,54 +52,66 @@ $$
 
 ---
 
-### Axiom 2: Bounded Bilinear Coupling
+### Axiom 2: Projected Bilinear Coupling
 
-Pairwise coupling between interacting fields:
-
-$$
-C_{ij} = \big| \langle \mathcal{P}(\psi_i) \mid \mathcal{P}(\psi_j) \rangle \big|^2, \quad 0 \le C_{ij} \le 1.
-$$
-
-Invariant under local phase transformations and global unitaries; depends only on projected state geometry.
-
----
-
-### Axiom 3: Coherent Regime
-
-Active fields maintain frequency coherence:
+Pairwise coupling between interacting fields is defined as:
 
 $$
-\sigma(\{\omega_i : a_i = 1\}) < 0.1 \cdot \bar{\omega}.
+C_{ij} =
+\big| \langle \mathcal{P}(\psi_i) \mid \mathcal{P}(\psi_j) \rangle \big|^2,
+\quad 0 \le C_{ij} \le 1.
 $$
 
-This defines the coherent phase where stable NCFT dynamics exist. Decohered regimes are permitted but excluded from predictions.
+Coupling depends only on projected state geometry and is invariant under local
+phase transformations and global unitary rotations.
 
 ---
 
 ### Closure: Pure Pairwise Summation
 
-Total interaction strength:
+Total interaction strength is defined by pure pairwise aggregation:
 
 $$
 F(\{\psi_k\}) = \sum_{i < j} C_{ij}.
 $$
 
-No higher-order terms appear at the fundamental level.
+No higher-order interaction terms appear at the fundamental level.
+
+---
+
+### Regime Classification (Non-Axiomatic)
+
+Field-associated frequencies \( \omega_i \) may be introduced for diagnostic or
+classificatory purposes. Frequency dispersion does not affect stability,
+alignment, or attractor structure and therefore does not define validity
+conditions for NCFT-core dynamics.
 
 ---
 
 ### Dynamics (Validation Scope)
 
-Validated toy models use projected gradient flow preserving Axiom 1:
+Executable toy models implement projected gradient-flow dynamics consistent
+with the axioms:
 
 $$
-\frac{d}{dt}\lvert \psi_i \rangle = -\Pi_i\!\left(\frac{\partial E}{\partial \langle \psi_i \rvert}\right), \quad E = -F.
+\frac{d}{dt}\lvert \psi_i \rangle
+= -\Pi_i\!\left(\frac{\partial E}{\partial \langle \psi_i \rvert}\right),
+\quad
+E = -F.
 $$
 
-Unconstrained dynamics are permitted as stress tests but excluded from NCFT-core.
+Alternative update rules or unconstrained evolutions are permitted as stress
+tests or adversarial constructions but lie outside NCFT-core.
 
 ---
 
 ### Axiomatic Scope
 
-These elements (primitive + three axioms + closure) fully specify NCFT-core as a closed effective field model within coherent regimes. They assert no physical substrate or measurement apparatus. Interpretations constitute separate modeling layers.
+The primitive, two axioms, and closure condition fully specify NCFT-core as a
+closed effective interaction theory. Within this axiomatic scope, dynamics are
+bounded, deterministic, dynamically gapped, and converge to a single global
+attractor.
+
+NCFT-core asserts no physical substrate, measurement apparatus, or empirical
+interpretation. Such interpretations constitute separate modeling layers and
+are not part of the axiomatic structure.
