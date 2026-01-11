@@ -7,47 +7,54 @@ stability, identifiability, or predictive clarity. Conversely, highly
 constrained models are tractable but may lack structural depth or physical
 relevance.
 
-Non-Local Consciousness Field Theory (NCFT) is developed as a response to this
-tension. Rather than attempting to model consciousness as a phenomenological
-process or emergent narrative, NCFT defines a minimal interaction field
-framework in which coherence, boundedness, and deterministic structure are
-enforced at the axiomatic level. The theory is deliberately narrow in scope and
-is intended to characterize a specific class of interaction dynamics rather
-than provide a universal explanatory model.
+Non-Local Consciousness Field Theory (NCFT-core) is developed as a response to
+this tension. Rather than attempting to model consciousness as a
+phenomenological process or emergent narrative, NCFT-core defines a minimal,
+formally closed interaction field framework in which boundedness,
+normalization, and deterministic structure are enforced at the axiomatic
+level. The theory is deliberately narrow in scope and is intended to
+characterize a specific class of interaction dynamics rather than provide a
+universal explanatory model.
 
-At its core, NCFT treats interacting entities as unit-normalized fields coupled
-exclusively through pairwise bilinear interactions. A projection operator
-enforces normalization and coherence, while a closure condition restricts
-collective behavior to pure pairwise contributions. These constraints are not
-introduced heuristically: extensive computational exploration demonstrates
-that relaxing them leads to predictable breakdowns of boundedness, stability,
-or inferential control.
+At its core, NCFT-core treats interacting entities as unit-normalized field
+states coupled exclusively through pairwise bilinear interactions. A
+projection operator defines the admissible state space, restricting dynamics
+to the unit-norm manifold, while a closure condition eliminates all
+higher-order collective terms. These constraints are not heuristic:
+executable computational stress testing demonstrates that relaxing any of
+them leads to immediate loss of well-posedness, boundedness, or deterministic
+behavior.
 
-The theory is explicitly phase-restricted. Only coherent regimes—defined by
-bounded frequency dispersion and enforced projection—are claimed to exhibit
-stable NCFT dynamics. Within these regimes, NCFT dynamics are strongly stable
-and dynamically gapped, exhibiting finite relaxation times and no evidence of
-marginal stability, chaotic wandering, or glassy behavior. Perturbations decay
-rapidly, and coherent attractors dominate late-time dynamics.
+NCFT-core exhibits strongly damped, non-critical dynamics. Across all tested
+constructions, valid flows converge to a single global attractor, with no
+evidence of clustering, metastability, marginal modes, chaotic wandering, or
+glassy behavior. Perturbations decay on finite timescales, and no alternative
+basins of attraction are observed.
 
-NCFT does not seek criticality, scale-free behavior, or emergent long-range
-order. When interactions are restricted to local graphs, collective behavior
-remains short-range, characterized by a finite correlation length that
-saturates well below system size. Under noise and external drive, NCFT admits
-stable non-equilibrium steady states with bounded, noise-dominated
-fluctuations, reinforcing its interpretation as an effective rather than
-fundamental field theory.
+Frequency coherence, defined via bounded dispersion of field-associated
+frequencies, serves only as a classificatory descriptor of regimes.
+Computational results demonstrate that frequency dispersion—static or
+dynamical—does not alter state alignment, stability, or attractor structure.
+Coherence neither stabilizes nor destabilizes NCFT-core dynamics.
 
-NCFT is validated exclusively through executable computational models. An
-extensive toy suite probes stability, interaction topology, noise and openness,
-inverse identifiability limits, coarse-graining behavior, spectral structure,
-and statistical detectability. Both successful and failed constructions inform
-the final scope of the theory. Claims are restricted strictly to behaviors that
-persist across this validation program.
+NCFT-core does not seek criticality, scale-free behavior, or emergent
+long-range order. When interactions are restricted to local graphs, collective
+behavior remains short-range, characterized by a finite correlation length
+that saturates well below system size. No phase transitions or scale
+invariance are observed.
 
-The goal of NCFT is not maximal explanatory reach, but maximal structural
-clarity within a well-defined interaction class. By sharply defining its
-axioms, phase constraints, dynamical character, and epistemic limits, the
-theory aims to provide a stable foundation for further exploration,
-comparison, or potential empirical correspondence—without presupposing such
-extensions.
+Validation of NCFT-core is conducted exclusively through executable
+computational toy models designed for falsification rather than
+demonstration. The toy suite probes projection enforcement, interaction
+topology, frequency structure, clustering, spectral properties, and failure
+modes. Both successful and failed constructions inform the final scope of the
+theory. Claims are restricted strictly to behaviors that persist across this
+validation program.
+
+The goal of NCFT-core is not maximal explanatory reach, but maximal structural
+clarity within a precisely delimited interaction class. By sharply defining
+its axioms, admissible state space, dynamical character, and epistemic limits,
+the theory provides a stable reference framework. Any extension beyond this
+core—through additional variables, alternative manifolds, or modified
+interaction rules—constitutes a new theory rather than a refinement of
+NCFT-core.
