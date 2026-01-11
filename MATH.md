@@ -160,9 +160,9 @@ $$
 
 with step size $\eta>0$ and energy functional:
 
-$$
+\[
 \mathcal{E}(\{\psi_k\}) := -\sum_{i<j} \left|\langle \psi_i \mid \psi_j \rangle\right|^2.
-$$
+\]
 
 Step-size bounds (e.g. $\eta<1$) are sufficient conditions used for analytical
 clarity; numerical validation does not depend on sharp tuning of $\eta$.
