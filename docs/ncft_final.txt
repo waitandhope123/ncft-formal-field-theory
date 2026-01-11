@@ -1,0 +1,236 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\geometry{margin=1in}
+\sloppy
+
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{red},
+  commentstyle=\color{gray},
+  numbers=left,
+  numberstyle=\tiny,
+  frame=single,
+  breaklines=true
+}
+
+\title{\textbf{NCFT v5.2a5}\\Non-Local Consciousness Field Theory (Core)}
+\author{Sam DeRenzis}
+\date{January 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Non-Local Consciousness Field Theory (NCFT-core) defines a formally closed,
+projection-enforced interaction framework characterized by unit-normalized
+field states, bounded bilinear coupling, and pure pairwise closure.
+
+Extensive executable computational toy models demonstrate that NCFT-core
+dynamics are well-posed \emph{only} on the unit-norm manifold and possess a
+single global attractor. All valid flows are bounded, deterministic, strongly
+damped, and non-critical. No clustering, metastability, long-range order, or
+phase transitions are observed under any tested perturbation.
+
+Frequency coherence plays no dynamical role in stabilization or alignment and
+serves only as a classificatory descriptor of regimes. NCFT-core admits no soft,
+stochastic, or continuous extension off its projected state space.
+
+All claims are restricted strictly to behaviors that persist across systematic
+stress testing, including null and adversarial constructions. NCFT-core defines
+a sharply delimited universality class and makes no claims beyond this scope.
+\end{abstract}
+
+\section{Introduction}
+
+NCFT-core is developed to resolve a common tension in interaction modeling:
+the tradeoff between expressive dynamics and formal control. Rather than
+introducing rich interaction rules that risk instability or overfitting,
+NCFT-core enforces boundedness, normalization, and closure at the axiomatic
+level.
+
+Interacting entities are modeled as unit-normalized field states coupled
+exclusively through projected bilinear overlap. These constraints are not
+heuristic. Executable computational stress testing demonstrates that relaxing
+any of them leads to immediate loss of well-posedness, boundedness, or
+deterministic behavior.
+
+NCFT-core is not a theory of emergence, pattern formation, or critical
+phenomena. Its contribution lies in the precise delineation of a restricted,
+fully characterized universality class of interaction laws.
+
+Repository:
+\url{https://github.com/waitandhope123/ncft-formal-field-theory}
+
+\section{Primitive: Field States}
+
+Each interacting entity is represented as a unit-normalized field state:
+
+\begin{lstlisting}
+@dataclass
+class ConsciousnessField:
+    id: str
+    frequency: float = 1.0
+    active: bool = False
+    state: np.ndarray = None
+\end{lstlisting}
+
+\[
+\|\psi_i\| = 1
+\]
+
+\textbf{Projection is constitutive.}
+NCFT-core dynamics are defined only on the unit-norm manifold. Projection is not
+a numerical correction but a defining element of the theory. All softened,
+delayed, or stochastic projection variants are ill-posed and diverge.
+
+\section{Axiomatic Core}
+
+\subsection{Axiom 1: Universal Exclusion}
+
+\[
+\mathrm{Interact}(i,j) \iff
+(\mathrm{id}_i \neq \mathrm{id}_j) \land (a_i = a_j = 1)
+\]
+
+No field self-interacts.
+
+\subsection{Axiom 2: Projected Bilinear Coupling}
+
+\[
+C_{ij} =
+\left|
+\left\langle
+\mathcal{P}(\psi_i)
+\middle|
+\mathcal{P}(\psi_j)
+\right\rangle
+\right|^2,
+\qquad 0 \le C_{ij} \le 1
+\]
+
+Coupling depends only on projected state geometry and is invariant under global
+phase transformations.
+
+\subsection{Regime Classification: Frequency Coherence}
+
+\[
+\sigma(\{\omega_i : a_i = 1\}) < 0.1 \cdot \bar{\omega}
+\]
+
+Frequency coherence defines a \emph{classificatory regime label only}.
+Computational results demonstrate that frequency dispersion, static or
+dynamical, does not alter state alignment, attractor structure, or stability.
+Coherence does not stabilize, destabilize, or select NCFT-core dynamics.
+
+\subsection{Closure: Pure Pairwise Interaction}
+
+\[
+\mathcal{C}(\{f_i\}) = \sum_{i<j} C_{ij}
+\]
+
+No higher-order interaction terms appear at the fundamental level. All dynamics
+are fully determined by pairwise couplings.
+
+\section{Regime Classification (Non-Critical)}
+
+Executable toy models identify transient regimes of behavior based on parameter
+choices and initial conditions:
+
+\begin{itemize}
+\item \textbf{Incoherent Regime:} Frequency dispersion is large; convergence may
+be slower.
+\item \textbf{Transitional Regime:} Partial alignment occurs during transient
+dynamics.
+\item \textbf{Aligned Regime:} All valid flows converge to full global alignment.
+\end{itemize}
+
+These regimes do not correspond to distinct phases or phase transitions. All
+valid NCFT-core dynamics share the same asymptotic behavior.
+
+\section{Dynamical Characterization}
+
+Across all tested constructions, NCFT-core exhibits:
+
+\begin{itemize}
+\item A single global attractor
+\item Finite spectral gap
+\item Strong damping of perturbations
+\item Absence of chaos, marginal modes, or criticality
+\item No clustering, fragmentation, or metastability
+\end{itemize}
+
+There are no alternative basins of attraction.
+
+\section{Validation Overview}
+
+Validation is conducted exclusively through executable computational toy models
+designed for falsification rather than demonstration. Negative and null results
+are retained as first-class outcomes.
+
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Test} & \textbf{Outcome} & \textbf{Status} \\
+\hline
+Projection enforcement & Required for well-posedness & Pass \\
+Bilinear bounds & Preserved & Pass \\
+Pairwise closure & Verified & Pass \\
+Single-attractor behavior & Observed & Pass \\
+Boundedness & Maintained & Pass \\
+Criticality / clustering & Absent & Pass \\
+\hline
+\end{tabular}
+
+\section{Internal Event Classes Used for Axiom Stress-Testing}
+
+The following categories constitute the internal corpus from which NCFT-core
+axioms were reverse-stressed and delimited. They are not empirical predictions
+and do not constitute external validation.
+
+\begin{tabular}{|l|r|r|}
+\hline
+\textbf{Category} & \textbf{Fidelity} & \textbf{Events} \\
+\hline
+Semantic transfer & 1.00 & 22 \\
+Healing-related structure & 0.90 & 4 \\
+Self-exclusion events & 0.00 & 10 \\
+Third-party references & 0.95 & 5 \\
+Distance/shielding independence & 1.00 & 2 \\
+\hline
+Total &  & 44 \\
+\hline
+\end{tabular}
+
+\section{Conclusion}
+
+NCFT-core defines a projection-enforced effective interaction theory with
+unit-normalized state space, bounded bilinear coupling, and pure pairwise
+closure. Within its validated scope, the theory is fully characterized.
+
+NCFT-core:
+\begin{itemize}
+\item Is bounded, deterministic, and non-critical
+\item Possesses a single global attractor
+\item Admits no soft continuation off the projective manifold
+\item Does not support emergent structure or phase transitions
+\end{itemize}
+
+Any extension beyond this framework requires explicit modification of the state
+space or axioms and constitutes a new theory rather than a refinement of
+NCFT-core.
+
+\bigskip
+\noindent\rule{\textwidth}{0.4pt}
+
+\noindent
+\url{https://github.com/waitandhope123/ncft-formal-field-theory}
+
+\end{document}
