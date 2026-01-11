@@ -1,65 +1,69 @@
 # VALIDATION
 
-Validation of NCFT was conducted through an extensive suite of executable
+Validation of NCFT-core was conducted through an extensive suite of executable
 computational toy models designed not to demonstrate isolated behaviors, but to
 systematically probe the boundaries, failure modes, and invariant structures of
 the theory. Numerical experiments are treated as falsification-oriented probes
 rather than confirmatory examples.
 
-The toy suite spans stability analysis, topology variation, noise and
-open-system effects, inverse inference limits, coarse-graining behavior,
-spectral structure, and statistical detectability. Both successful and failed
-constructions are retained as part of the validation record.
+The toy suite spans projection enforcement, stability analysis, interaction
+topology, frequency structure, clustering, noise sensitivity, inverse inference
+limits, coarse-graining behavior, spectral structure, and statistical
+detectability. Both successful and failed constructions are retained as part of
+the validation record.
 
 ---
 
-## 1. Internal Consistency and Boundedness
+## 1. Internal Consistency and Well-Posedness
 
-Across all projection-enforced simulations, NCFT dynamics preserve unit
-normalization, bounded bilinear coupling, and deterministic execution.
-Violations of these properties occur systematically in unenforced or
-adversarial variants, confirming that boundedness is a structural consequence
-of the axioms rather than a numerical artifact.
+Across all valid simulations, NCFT-core dynamics preserve unit normalization,
+bounded bilinear coupling, and deterministic execution. Any relaxation of
+projection enforcement or pairwise closure leads to immediate divergence or
+loss of determinism, confirming that well-posedness is a constitutive
+consequence of the axioms rather than a numerical artifact.
 
 ---
 
-## 2. Phase Structure
+## 2. Regime Classification (Non-Critical)
 
-NCFT dynamics consistently organize into coherent, critical, and decoherent
-regimes under parameter variation. Only the coherent regime supports stable,
-predictive interaction structure. Transitions between regimes occur smoothly,
-with no evidence of hidden instabilities or chaotic behavior within the
-coherent phase.
+Parameter variation produces transient differences in convergence rate and
+alignment speed but does not generate distinct asymptotic phases. No critical,
+marginal, or chaotic regimes are observed. All valid NCFT-core dynamics converge
+to the same late-time behavior.
+
+Frequency coherence, defined via bounded dispersion of field-associated
+frequencies, functions only as a classificatory descriptor and does not affect
+stability, alignment, or attractor structure.
 
 ---
 
 ## 3. Robustness to Topology and Perturbation
 
-Core NCFT signatures persist across dense, sparse, random, and structured
-interaction topologies. Under additive noise, dropout, reinsertion, and
-external driving, projected dynamics degrade gradually rather than
-catastrophically. These tests identify clear coherence thresholds while
-demonstrating robustness to realistic perturbations.
+Core NCFT-core behavior persists across dense, sparse, random, and structured
+interaction topologies. Under controlled perturbations, including noise and
+temporary dropout, convergence slows smoothly rather than failing abruptly.
+Topology influences transient mixing rates but does not alter asymptotic
+behavior.
 
 ---
 
-## 4. Deterministic Attractor Structure
+## 4. Attractor Structure
 
-Energy landscape analysis reveals a dominant attractor basin governing
-late-time behavior in the coherent regime. No evidence of metastable glassy
-dynamics or chaotic wandering is observed. Energy descent behaves as a
-Lyapunov-like process under projection-enforced dynamics.
+Dynamical analysis reveals a single global attractor governing late-time
+behavior. No evidence of clustering, fragmentation, metastable states, glassy
+dynamics, or chaotic wandering is observed under any tested perturbation.
+Convergence behaves as a Lyapunov-like descent under projection-enforced
+dynamics.
 
 ---
 
 ## 5. Spectral Stability and Dynamical Gap
 
-Linear response analysis of late-time coherent states demonstrates that NCFT
-dynamics are dynamically gapped. The Jacobian of the projected update map
-exhibits eigenvalues strictly within the unit circle, with a finite spectral
-gap separating slow collective modes from rapidly damped degrees of freedom.
-Perturbations decay on finite timescales, excluding marginal stability,
-critical slowing-down, or long-lived modes.
+Linear response analysis demonstrates that NCFT-core dynamics are dynamically
+gapped. The Jacobian of the projected update map exhibits eigenvalues strictly
+within the unit circle, with a finite spectral gap separating collective modes
+from rapidly damped degrees of freedom. Perturbations decay on finite
+timescales, excluding marginal stability or critical slowing-down.
 
 ---
 
@@ -67,29 +71,29 @@ critical slowing-down, or long-lived modes.
 
 When interactions are restricted to explicit graphs, perturbation influence
 decays approximately exponentially with graph distance. This defines a finite
-correlation length that increases smoothly with coupling strength but
-saturates well below system size. No divergence or emergence of long-range
-or scale-free behavior is observed. Interaction topology significantly
-influences correlation length through its effect on mixing and damping.
+correlation length that increases smoothly with coupling strength but saturates
+well below system size. No divergence, clustering, or scale-free behavior is
+observed. Interaction topology influences correlation length through its effect
+on mixing and damping but does not change asymptotic structure.
 
 ---
 
 ## 7. Scale Dependence and Coarse-Graining
 
-Aggregated micro-level dynamics track independently evolved macro-level
-systems approximately but not exactly. Deviations grow initially but rapidly
-saturate to a bounded plateau and do not accumulate over time. These results
-situate NCFT as an effective, scale-dependent theory rather than a
+Aggregated micro-level dynamics approximately track independently evolved
+macro-level systems, with deviations that grow initially but rapidly saturate
+to a bounded, non-accumulating plateau. NCFT-core therefore behaves as an
+effective, scale-dependent interaction theory rather than a
 renormalization-invariant one.
 
 ---
 
 ## 8. Epistemic and Inference Limits
 
-Inverse reconstruction tests demonstrate that underlying interaction
-structure cannot be uniquely recovered from partial or noisy observations in
-general. Distinguishability between structured and null dynamics exists only
-above defined signal and observability thresholds. These epistemic limits are
+Inverse reconstruction tests demonstrate that underlying interaction structure
+cannot be uniquely recovered from partial or noisy observations in general.
+Distinguishability between structured and null dynamics exists only above
+defined signal and observability thresholds. These epistemic limits are
 intrinsic and irreducible.
 
 ---
@@ -97,27 +101,21 @@ intrinsic and irreducible.
 ## 9. Statistical Detectability and Falsifiability
 
 Explicit detection thresholds, false-positive rates, and power curves were
-computed for NCFT signatures under varying noise and observability conditions.
-NCFT is statistically detectable only within restricted regimes and
-explicitly non-detectable outside them. Failure to observe predicted structure
-within detectable regimes constitutes falsification at defined power.
-
----
-
-## 10. Non-Equilibrium and Fluctuation Structure
-
-Under simultaneous external driving and dissipation, NCFT dynamics settle
-into stable non-equilibrium steady states with bounded energy. Power spectral
-density analysis reveals broadband, noise-dominated fluctuations with no
-emergent oscillatory or critical modes, reinforcing the picture of a strongly
-damped, non-critical system.
+computed for NCFT-core signatures under varying noise and observability
+conditions. NCFT-core is statistically detectable only within restricted
+measurement regimes and explicitly non-detectable outside them. Failure to
+observe predicted structure within detectable regimes constitutes falsification
+at defined statistical power.
 
 ---
 
 ## Validation Summary
 
-Collectively, these results validate NCFT strictly within its declared scope.
-Projection-enforced coherent dynamics are bounded, strongly stable, dynamically
-gapped, short-range under locality, and epistemically constrained. Claims are
-limited to regimes that survive all stress tests described above. No
-conclusions are drawn outside these regimes.
+Collectively, these results validate NCFT-core strictly within its declared
+axiomatic scope. NCFT-core dynamics are bounded, deterministic, dynamically
+gapped, single-attractor, and short-range under locality. Claims are limited to
+behaviors that persist across all stress tests described above.
+
+No conclusions are drawn outside this scope. Any extension beyond these results
+requires explicit modification of the state space or axioms and constitutes a
+new theory rather than a refinement of NCFT-core.
