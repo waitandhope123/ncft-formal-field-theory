@@ -1,35 +1,29 @@
 # ABSTRACT
 
-Non-Local Consciousness Field Theory (NCFT) is a formally defined interaction
-field framework characterized by a minimal axiomatic core, enforced projection
-dynamics, and pure pairwise closure. Interacting entities are modeled as
-unit-normalized fields coupled exclusively through bounded bilinear overlap,
-with collective behavior constrained by explicit coherence conditions.
+Non-Local Consciousness Field Theory (NCFT-core) is a formally defined interaction
+field framework characterized by a minimal axiomatic core, constitutive
+projection enforcement, and pure pairwise closure. Interacting entities are
+modeled as unit-normalized field states coupled exclusively through bounded
+bilinear overlap.
 
-Within its declared scope, NCFT exhibits bounded, deterministic, and internally
-consistent dynamics. Extensive computational validation demonstrates that
-coherent NCFT regimes are dynamically gapped, strongly stable, and free of
-marginal or chaotic behavior. Perturbations decay on finite timescales, and
-no critical slowing-down, glassy dynamics, or long-range instability is
-observed.
+Within its declared scope, NCFT-core exhibits bounded, deterministic, and
+internally consistent dynamics. Extensive executable computational validation
+demonstrates that NCFT-core dynamics are dynamically gapped, strongly stable,
+and free of marginal, critical, or chaotic behavior. Perturbations decay on
+finite timescales, and all valid flows converge to a single global attractor.
 
-When interactions are restricted to local graphs, NCFT supports only
-short-range collective behavior characterized by a finite correlation length.
-This correlation length increases smoothly with coupling strength but saturates
-well below system size, excluding emergent criticality or scale-free transport.
-Under stochastic noise and external drive, NCFT admits stable non-equilibrium
-steady states with broadband, noise-dominated fluctuation spectra.
+When interactions are restricted to local graphs, NCFT-core supports only
+short-range collective behavior characterized by a finite correlation length
+that saturates well below system size. No clustering, phase transitions, or
+long-range order are observed under any tested perturbation.
 
-NCFT behaves as an effective, scale-dependent theory rather than a
-renormalization-invariant one. Under coarse-graining, aggregated micro-level
-dynamics approximately track independently evolved macro-level systems, with
-bounded, non-accumulating error. The theory defines a restricted universality
-class: a finite family of projection-enforced, approximately bilinear
-interaction laws that converge to a common late-time structure.
+NCFT-core behaves as an effective, projection-enforced interaction theory and
+defines a sharply delimited universality class of approximately bilinear
+interaction laws. The theory does not claim generic universality, critical
+behavior, scale invariance, long-range coherence, or complete inverse
+identifiability.
 
-All claims are restricted strictly to projection-enforced, coherent-phase
-dynamics that survive exhaustive computational stress testing. NCFT does not
-claim generic universality, critical behavior, long-range coherence, or complete
-inverse identifiability. Its value lies in the precise characterization of
-interaction structure, stability, invariants, and epistemic limits within its
-stated scope.
+All claims are restricted strictly to behaviors that persist across exhaustive
+computational stress testing. NCFT-core is complete within its axiomatic scope;
+any extension beyond this framework constitutes a new theory rather than a
+refinement.
