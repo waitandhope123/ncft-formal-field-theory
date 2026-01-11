@@ -1,29 +1,33 @@
 # VALIDATION METHODOLOGY
 
-Validation of NCFT was conducted through an extensive suite of executable
+Validation of NCFT-core was conducted through an extensive suite of executable
 computational toy models designed not to demonstrate isolated behaviors, but to
-systematically probe the boundaries, invariant structures, and failure modes
-of the theory. Numerical simulations are treated as falsification-oriented
-tools rather than confirmatory demonstrations.
+systematically probe boundaries, invariant structures, and failure modes of
+the theory. Numerical simulations are treated as falsification-oriented tools
+rather than confirmatory demonstrations.
 
-Each toy was constructed to target a specific theoretical question and
-includes null baselines, adversarial variants, and intentionally broken
-dynamics. Failed constructions are retained as negative controls and are
-considered part of the validation record.
+Each toy targets a specific theoretical question and includes null baselines,
+adversarial variants, and intentionally ill-posed constructions. Failed or
+divergent dynamics are retained as negative controls and are considered part
+of the validation record.
 
 ---
 
-## 1. Stability, Phase Structure, and Spectral Diagnostics
+## 1. Stability, Attractor Structure, and Spectral Diagnostics
 
 Core dynamics were tested across wide ranges of system size, state dimension,
-update scale, and projection enforcement. Linear response analysis was
-performed by computing finite-difference Jacobians of the projected update
-map around late-time coherent states. Eigenvalue spectra were examined to
-identify relaxation timescales, spectral gaps, and stability margins.
+update scale, interaction topology, and projection enforcement. Linear response
+analysis was performed by computing finite-difference Jacobians of the
+projected update map around late-time states.
 
-Baseline-corrected perturbation analysis was employed to distinguish genuine
-dynamical response from stochastic noise floors, ensuring that apparent
-slowing-down effects were not misinterpreted as marginal stability.
+Eigenvalue spectra were examined to identify relaxation timescales, spectral
+gaps, and stability margins. Baseline-corrected perturbation analysis was used
+to distinguish genuine dynamical response from stochastic noise floors,
+ensuring that apparent slowing-down effects were not misinterpreted as
+marginal stability.
+
+These tests establish that NCFT-core dynamics are dynamically gapped and
+converge to a single global attractor under all valid constructions.
 
 ---
 
@@ -34,56 +38,66 @@ random, small-world, and locally structured topologies. Graph-local observables
 were used to quantify perturbation propagation and extract correlation lengths
 under explicit locality constraints.
 
-These tests assess sensitivity to network structure and determine whether NCFT
-supports long-range or critical behavior under restricted interaction
-geometry.
+These tests assess sensitivity to network structure and determine whether
+NCFT-core admits clustering, long-range order, or critical behavior under
+restricted interaction geometry.
 
 ---
 
-## 3. Noise, Open-System, and Non-Equilibrium Stress Testing
+## 3. Noise Sensitivity and Controlled Non-Equilibrium Testing
 
-Dynamics were evaluated under additive noise, dropout, reinsertion, external
-driving, and dissipation. These tests characterize robustness, coherence
-thresholds, and steady-state behavior under non-idealized conditions rather
-than assuming closed-system dynamics.
+Dynamics were evaluated under controlled perturbations, including additive
+noise, temporary dropout, reinsertion, and bounded external driving. These
+tests characterize sensitivity to non-idealized conditions without assuming
+arbitrary openness or unbounded energy injection.
 
-Power spectral density analysis was used to distinguish damped steady states
-from oscillatory or critical regimes in driven and noisy conditions.
+Power spectral density analysis was used to distinguish strongly damped steady
+states from oscillatory or critical regimes in noisy or driven conditions.
 
 ---
 
 ## 4. Inverse Identifiability and Epistemic Limits
 
-Inverse problems were constructed to determine what underlying structure can
-and cannot be reconstructed from partial and noisy observations. These tests
-explicitly delimit epistemic limits and prevent overinterpretation of
-observable data.
+Inverse problems were constructed to determine which aspects of underlying
+interaction structure can and cannot be reconstructed from partial or noisy
+observations. These tests explicitly delimit epistemic limits and prevent
+overinterpretation of observable data.
+
+Non-identifiability results are treated as intrinsic properties of the theory
+rather than deficiencies of inference procedures.
 
 ---
 
 ## 5. Coarse-Graining and Scale Dependence
 
-Micro-level dynamics were aggregated and compared against independently
-evolved macro-level systems to test closure under coarse-graining. Deviations
-were tracked over time to assess whether errors accumulate or remain bounded,
-distinguishing effective field behavior from exact renormalization closure.
+Micro-level dynamics were aggregated and compared against independently evolved
+macro-level systems to test closure under coarse-graining. Deviations were
+tracked over time to assess whether errors accumulate or remain bounded,
+distinguishing effective interaction behavior from exact renormalization
+closure.
 
 ---
 
 ## 6. Statistical Detectability and Model Discrimination
 
 Detection power, false-positive rates, and sample-size requirements were
-quantified for NCFT signatures under varying noise and observability
+quantified for NCFT-core signatures under varying noise and observability
 conditions. Comparative model discrimination was performed to identify which
-observables uniquely characterize NCFT dynamics relative to competing
-normalized interaction models.
+observables distinguish NCFT-core dynamics from competing normalized
+interaction models.
 
 ---
 
 ## Methodological Scope
 
 Across all categories, validation claims are restricted strictly to
-projection-enforced coherent regimes that survive these stress tests. Toys
-that violate axioms or fail to exhibit NCFT signatures are retained as
-negative controls. Validation is therefore oriented toward boundary discovery
-and falsifiability rather than selective confirmation.
+projection-enforced NCFT-core dynamics. Frequency coherence is treated as a
+classificatory descriptor and does not define validity or stability conditions.
+
+Toys that violate axioms, relax projection, or exit the admissible state space
+are retained as negative controls. Validation is therefore oriented toward
+boundary discovery, falsification, and scope delimitation rather than selective
+confirmation.
+
+Any behavior not explicitly probed by this methodology lies outside the
+validated scope of NCFT-core.
