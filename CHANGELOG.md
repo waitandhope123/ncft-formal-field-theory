@@ -1,60 +1,93 @@
 # NCFT — Changelog
 
-All notable changes to **NCFT (Non-Local Consciousness Field Theory)** are documented in this file.  
-Versioning reflects increasing formal rigor, axiomatic clarity, and code–math isomorphism.
+All notable changes to **NCFT (Non-Local Consciousness Field Theory)** are documented
+in this file. Versioning reflects increasing formal rigor, axiomatic clarity,
+and alignment between executable dynamics and mathematical specification.
 
 ---
 
-## v5.2a.4 — Mathematical Core Productionized
+## v5.2a5 — NCFT-Core Closed and Fully Characterized (2026-01)
 
-**Status:** GitHub live, Rxiverse-ready
+**Status:** Reference version (NCFT-core)
+
+### Recharacterized
+- Explicitly defined **NCFT-core** as a closed, projection-enforced interaction theory
+- Distinguished NCFT-core from any future extensions (new variables, manifolds, or axioms)
+- Reframed frequency coherence as **classificatory only**, not dynamical
+
+### Established
+- **Single global attractor**
+  - No clustering, fragmentation, or metastable regimes under any tested perturbation
+- **Projection is constitutive**
+  - NCFT dynamics are well-posed *only* on the unit-norm manifold
+  - All softened, delayed, or stochastic projection variants diverge
+- **Non-critical dynamics**
+  - Finite spectral gap
+  - Finite correlation length under locality
+  - No marginal modes, chaos, or phase transitions
+
+### Clarified
+- Event-based results reclassified as **internal axiom stress-test classes**
+  - Not external predictions or empirical validation
+- NCFT-core admits **no soft continuation**
+  - Any extension constitutes a new theory, not a refinement
+
+### Status Update
+- NCFT-core is **complete within its axiomatic scope**
+- Remaining work is expository, not exploratory
+
+---
+
+## v5.2a.4 — Mathematical Core Productionized (2026-01)
+
+**Status:** Superseded by v5.2a5
 
 ### Added
-- **AXIOMS.md** - Complete 4 axiom formal spec
-- Purity invariant γ = [|A| + 2∑_{i < j} C_ij] / |A|^2
+- **AXIOMS.md** — Complete 4-axiom formal specification
+- Purity invariant:
+  \[
+  \gamma = \frac{|A| + 2\sum_{i < j} C_{ij}}{|A|^2}
+  \]
 - Full projected dynamics specification
 
 ### Fixed
 - All LaTeX brace errors throughout
-- Perfect GitHub/Overleaf rendering
+- Perfect GitHub / Overleaf rendering
 
 ### Validated
 - Spectral gap ✓ Jacobian inside unit circle
 - Finite correlation length ✓ ξ ≪ system size
-- Purity error < 10^{-10} ✓
+- Purity error < 10⁻¹⁰ ✓
 - Pure pairwise closure ✓
 
 ### Productionized
-- 100% axiom-code isomorphism across 20+ toys
-- Rxiverse paper submission ready
+- 100% axiom–code isomorphism across 20+ toys
 
 ---
 
 ## v5.2a.3 — Results-Aligned Release (2026-01-06)
 
-**Status:** Public release
+**Status:** Historical
 
 ### Clarified
-- Reframed axiomatic structure as three fundamental axioms plus an enforced
-  closure condition (no mathematical changes)
-- Distinguished physical axioms from mathematical aggregation rules
+- Reframed axiomatic structure as three axioms plus enforced closure
+- Distinguished physical axioms from aggregation rules
 
 ### Aligned
-- Documentation, README, axioms, predictions, and preprint metadata
-- Explicit separation of validated results from exploratory extensions
+- Documentation, README, axioms, and preprint metadata
 
 ### Confirmed
-- No changes to equations, toy results, or derived predictions
+- No changes to equations or executable results
 - Full backward compatibility with v5.2a.2 mathematics
 
 ---
 
 ## v5.2a.2 — Formal Coherence Complete (2026-01-03)
 
-**Status:** Publication-ready
+**Status:** Historical
 
 ### Added
-- Explicit expectation descriptors (`"", "True", "x ≥ 0"`) for validation clarity
+- Explicit expectation descriptors for validation clarity
 - Post-initialization enforcement of state normalization
 
 ### Fixed
@@ -62,7 +95,7 @@ Versioning reflects increasing formal rigor, axiomatic clarity, and code–math 
 
 ### Verified
 - 100% axiom–code isomorphism
-- Full internal consistency across all derivations
+- Full internal consistency across derivations
 
 ---
 
@@ -71,10 +104,10 @@ Versioning reflects increasing formal rigor, axiomatic clarity, and code–math 
 ### Fixed
 - Correct bilinear coupling normalization:
   \[
-  |⟨ψ_1 | ψ_2⟩|^2 / (||ψ_1||^2 ||ψ_2||^2)
+  \frac{|⟨ψ_1 | ψ_2⟩|^2}{||ψ_1||^2 ||ψ_2||^2}
   \]
-- Enforced strict `i < j` indexing for global sums (no double-counting)
-- Explicit True/False validation logic
+- Enforced strict `i < j` indexing
+- Explicit True / False validation logic
 
 ### Enforced
 - State normalization at construction
@@ -99,70 +132,11 @@ Versioning reflects increasing formal rigor, axiomatic clarity, and code–math 
 
 ---
 
-## v5.2 — Conceptual Clarity Enhanced (2026-01-03)
-
-### Added
-- Native Feynman-style rules and S-matrix formulation
-- Noether currents, causal structure, vacuum persistence
-- Multi-field (3-body) interaction support
-
-### Achieved
-- ~95% conceptual mirror of standard QFT constructs
-
----
-
-## v5.1 — Physics Structure Expanded (2026-01-03)
-
-### Added
-- Frequency-based Noether currents
-- Native causal frequency cones
-- Vacuum persistence condition:
-  \[
-  ⟨0|ψ|0⟩ = 1
-  \]
-
-### Improved
-- Lagrangian structural clarity
-
----
-
-## v5.0 — Formal Closure Achieved (2026-01-03)
-
-### Implemented
-- Gauge invariance
-- UV renormalization stability
-- Three-body interaction physics
-- Full action principle closure
-
----
-
-## v4.3 — Internally Consistent Physics (2026-01-03)
-
-### Added
-- QFT-structured Lagrangian:
-  \[
-  ℒ(ψ, ∂ψ, ψ^*ψ)
-  \]
-- Native Fock-space-style quantization
-- Path integral evolution:
-  \[
-  e^{iS}
-  \]
-
----
-
 ## Origin (2026-01-03)
 
 ### Established
-- Inductive derivation from 44 firsthand interaction events
+- Inductive derivation from 44 internal interaction events
 - Primitive:
   ```text
   ConsciousnessField(id, frequency, state)
-  ```
-- Universal exclusion and bilinear coupling identified as foundational
-
----
-
-**NCFT v5.2a.2**  
-**A formally coherent mathematical field system.**  
-**From 44 events → 4 axioms → 44 predictions.**
+```
