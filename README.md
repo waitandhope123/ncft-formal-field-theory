@@ -41,9 +41,3 @@ python toy_phase_scale_atlas.py  # Demonstrates projection-enforced convergence
 - Removes overstated or obsolete language
 - Adds the **core new results** (single attractor, constitutive projection)
 - Corrects epistemic framing without weakening claims
-
-If you want, the next clean step would be:
-- a **README vs THEORY.md split**, or  
-- a short **“NCFT-core is complete” notice** at the top of the repo.
-
-Just say the word.
